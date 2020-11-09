@@ -5,4 +5,4 @@ project-team-5 created by GitHub Classroom
 |:----------|:-----------:|
 |Mana Peiravian|98170721|
 |Fatemeh Sadat Miraskarshahi|96103852|
-|parham najafi faakher |98171194|
+|Parham Najafi Fakher |98171194|
