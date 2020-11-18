@@ -1,3 +1,9 @@
+package people;
+
+import gameStuff.Event;
+import gameStuff.Game;
+import gameStuff.GameLog;
+
 import java.util.ArrayList;
 
 public class Player extends User {
@@ -8,19 +14,23 @@ public class Player extends User {
     private ArrayList<Player> friends;
     private ArrayList<Player> friendsRequests;
 
-    public void participateInEvent(Event event){
+    public Player(String firstname, String lastName, String userName, String password, String email, String phoneNumber) {
+        super(firstname, lastName, userName, password, email, phoneNumber);
+    }
+
+    public void participateInEvent(Event event) {
 
     }
 
-    public void changeMenu(){
+    public void changeMenu() {
 
     }
 
-    public void runGame(Game game){
+    public void runGame(Game game) {
 
     }
 
-    public void addFriend(User user){
+    public void addFriend(User user) {
 
     }
 

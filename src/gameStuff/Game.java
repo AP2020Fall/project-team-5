@@ -1,3 +1,5 @@
+package gameStuff;
+
 public class Game {
     private String gameID;
     private String gameName;
@@ -18,10 +20,11 @@ public class Game {
         this.gameName = gameName;
     }
 
-    public void executeGame(){
+    public void executeGame() {
 
     }
-    public void setScores(){
+
+    public void setScore() {
 
     }
 }
