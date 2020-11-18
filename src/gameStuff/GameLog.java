@@ -6,36 +6,28 @@ public class GameLog {
     private String logID;
     private Integer gameScore;
 
-    public Integer getNumberOfPlaying() {
-        return numberOfPlaying;
+
+    public GameLog(Integer numberOfPlaying, Integer numberOfWins, String logID, Integer gameScore) {
+        this.numberOfPlaying = numberOfPlaying;
+        this.numberOfWins = numberOfWins;
+        this.logID = logID;
+        this.gameScore = gameScore;
     }
 
-    public void setNumberOfPlaying(Integer numberOfPlaying) {
-        this.numberOfPlaying = numberOfPlaying;
+    public Integer getNumberOfPlaying() {
+        return numberOfPlaying;
     }
 
     public Integer getNumberOfWins() {
         return numberOfWins;
     }
 
-    public void setNumberOfWins(Integer numberOfWins) {
-        this.numberOfWins = numberOfWins;
-    }
-
     public String getLogID() {
         return logID;
     }
 
-    public void setLogID(String logID) {
-        this.logID = logID;
-    }
-
     public Integer getGameScore() {
         return gameScore;
-    }
-
-    public void setGameScore(Integer gameScore) {
-        this.gameScore = gameScore;
     }
 
     static public void showNumberOfWinning(int numberOfWinning) {

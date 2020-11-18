@@ -12,44 +12,32 @@ public class Event {
     private Integer scoreOfEvent;
     private String eventID;
 
-    public String getGameName() {
-        return gameName;
+    public Event(String gameName, Date startOfEvent, Date endOfEvent, Integer scoreOfEvent, String eventID) {
+        this.gameName = gameName;
+        this.startOfEvent = startOfEvent;
+        this.endOfEvent = endOfEvent;
+        this.scoreOfEvent = scoreOfEvent;
+        this.eventID = eventID;
     }
 
-    public void setGameName(String gameName) {
-        this.gameName = gameName;
+    public String getGameName() {
+        return gameName;
     }
 
     public Date getStartOfEvent() {
         return startOfEvent;
     }
 
-    public void setStartOfEvent(Date startOfEvent) {
-        this.startOfEvent = startOfEvent;
-    }
-
     public Date getEndOfEvent() {
         return endOfEvent;
-    }
-
-    public void setEndOfEvent(Date endOfEvent) {
-        this.endOfEvent = endOfEvent;
     }
 
     public Integer getScoreOfEvent() {
         return scoreOfEvent;
     }
 
-    public void setScoreOfEvent(Integer scoreOfEvent) {
-        this.scoreOfEvent = scoreOfEvent;
-    }
-
     public String getEventID() {
         return eventID;
-    }
-
-    public void setEventID(String eventID) {
-        this.eventID = eventID;
     }
 
     public void addEvent(String eventID, Admin userID) {
