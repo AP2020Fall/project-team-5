@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Player extends User {
-    private int numberOfdaysSinceRegisteration;
+    private int numberOfDaysSinceRegisteration;
     private double moneyAmount;
     private int score;
     private GameLog gameLog;
@@ -25,7 +25,7 @@ public class Player extends User {
     }
 
     public int getNumberOfdaysSinceRegisteration() {
-        return numberOfdaysSinceRegisteration;
+        return numberOfDaysSinceRegisteration;
     }
 
     public double getMoneyAmount() {
