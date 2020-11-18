@@ -3,41 +3,39 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="142.0" y="303.0">Player</node>
-    <node x="85.5" y="0.0">User</node>
-    <node x="607.0" y="0.0">Game</node>
-    <node x="149.0" y="601.0">Event</node>
-    <node x="0.0" y="402.5">Admin</node>
-    <node x="413.0" y="0.0">Main</node>
-    <node x="0.0" y="601.0">GameLog</node>
+    <node x="144.0" y="304.0">Player</node>
+    <node x="87.0" y="0.0">User</node>
+    <node x="0.0" y="403.5">Admin</node>
+    <node x="292.0" y="603.0">Game</node>
+    <node x="155.0" y="603.0">Event</node>
+    <node x="0.0" y="603.0">GameLog</node>
+    <node x="415.0" y="0.0">Main</node>
   </nodes>
   <notes />
   <edges>
     <edge source="Admin" target="User">
-      <point x="0.0" y="-27.0" />
-      <point x="61.0" y="278.0" />
-      <point x="121.75" y="278.0" />
-      <point x="-36.25" y="126.5" />
+      <point x="0.0" y="-27.5" />
+      <point x="62.0" y="279.0" />
+      <point x="123.25" y="279.0" />
+      <point x="-36.25" y="127.0" />
     </edge>
     <edge source="Player" target="User">
-      <point x="0.0" y="-126.5" />
-      <point x="255.0" y="278.0" />
-      <point x="194.25" y="278.0" />
-      <point x="36.25" y="126.5" />
+      <point x="0.0" y="-127.0" />
+      <point x="257.0" y="279.0" />
+      <point x="195.75" y="279.0" />
+      <point x="36.25" y="127.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
-  <SelectedNodes>
-    <node>Admin</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="287.5" y="322.0" />
+  <SelectedNodes />
   <Categories>
-    <Category>Inner Classes</Category>
-    <Category>Properties</Category>
+    <Category>Fields</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
-    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
   </Categories>
-  <SCOPE>All</SCOPE>
-  <VISIBILITY>private</VISIBILITY>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>packageLocal</VISIBILITY>
 </Diagram>
 
