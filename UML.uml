@@ -3,46 +3,65 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="957.0">gameStuff.GameLog</node>
-    <node x="1121.25" y="0.0">gameStuff.Game</node>
-    <node x="328.0" y="558.5">people.Admin</node>
-    <node x="1218.0" y="195.0">gameStuff.BattleSea</node>
-    <node x="992.0" y="195.0">gameStuff.DotsAndBoxes</node>
-    <node x="684.0" y="0.0">gameStuff.Event</node>
-    <node x="169.25" y="0.0">people.User</node>
-    <node x="0.0" y="481.0">people.Player</node>
-    <node x="317.0" y="957.0">Main</node>
+    <node x="592.0" y="359.0">Menu.PlayerMenu</node>
+    <node x="81.625" y="795.5">people.Admin</node>
+    <node x="1185.0" y="195.0">gameStuff.DotsAndBoxes</node>
+    <node x="1411.0" y="195.0">gameStuff.BattleSea</node>
+    <node x="273.0" y="237.0">people.User</node>
+    <node x="450.625" y="718.0">people.Player</node>
+    <node x="302.5" y="0.0">Menu.UserMenu</node>
+    <node x="0.0" y="337.0">Menu.AdminMenu</node>
+    <node x="0.0" y="1194.0">gameStuff.GameLog</node>
+    <node x="1314.25" y="0.0">gameStuff.Game</node>
+    <node x="877.0" y="0.0">gameStuff.Event</node>
+    <node x="317.0" y="1194.0">Main</node>
   </nodes>
   <notes />
   <edges>
     <edge source="people.Admin" target="people.User">
-      <point x="0.0" y="-138.0" />
-      <point x="483.5" y="456.0" />
-      <point x="393.5" y="456.0" />
-      <point x="74.75" y="215.5" />
-    </edge>
-    <edge source="people.Player" target="people.User">
-      <point x="0.0" y="-215.5" />
-      <point x="154.0" y="456.0" />
-      <point x="244.0" y="456.0" />
+      <point x="77.75" y="-138.0" />
+      <point x="314.875" y="693.0" />
+      <point x="347.75" y="693.0" />
       <point x="-74.75" y="215.5" />
+    </edge>
+    <edge source="people.Player" target="Menu.PlayerMenu">
+      <point x="77.0" y="-215.5" />
+      <point x="681.625" y="693.0" />
+      <point x="712.0" y="693.0" />
+      <point x="0.0" y="93.5" />
     </edge>
     <edge source="gameStuff.BattleSea" target="gameStuff.Game">
       <point x="0.0" y="-27.5" />
-      <point x="1307.5" y="170.0" />
-      <point x="1241.25" y="170.0" />
+      <point x="1500.5" y="170.0" />
+      <point x="1434.25" y="170.0" />
       <point x="40.0" y="72.5" />
     </edge>
     <edge source="gameStuff.DotsAndBoxes" target="gameStuff.Game">
       <point x="0.0" y="-27.5" />
-      <point x="1095.0" y="170.0" />
-      <point x="1161.25" y="170.0" />
+      <point x="1288.0" y="170.0" />
+      <point x="1354.25" y="170.0" />
       <point x="-40.0" y="72.5" />
     </edge>
+    <edge source="people.Admin" target="Menu.AdminMenu">
+      <point x="-77.75" y="-138.0" />
+      <point x="159.375" y="693.0" />
+      <point x="126.5" y="693.0" />
+      <point x="0.0" y="115.5" />
+    </edge>
+    <edge source="people.User" target="Menu.UserMenu">
+      <point x="0.0" y="-215.5" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="people.Player" target="people.User">
+      <point x="-77.0" y="-215.5" />
+      <point x="527.625" y="693.0" />
+      <point x="497.25" y="693.0" />
+      <point x="74.75" y="215.5" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.4999999999999998" x="1098.0" y="335.00000000000034" />
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="535.2499999999995" y="623.4999999999998" />
   <SelectedNodes>
-    <node>gameStuff.GameLog</node>
+    <node>Main</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
