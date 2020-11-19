@@ -1,6 +1,8 @@
 package people;
 
-public class User {
+import Menu.UserMenu;
+
+public class User implements UserMenu {
     private String firstname;
     private String lastName;
     private String userID;
@@ -72,6 +74,41 @@ public class User {
 
     public String getUserName() {
         return userName;
+    }
+
+    @Override
+    public String viewAccountMenu() {
+        return null;
+    }
+
+    @Override
+    public void changePassword(String currentPassword, String newPassword) {
+
+    }
+
+    @Override
+    public void edit(String field, String newValue) {
+
+    }
+
+    @Override
+    public String viewPlatoStatistics(Player player) {
+        return null;
+    }
+
+    @Override
+    public String viewGamesHistory() {
+        return null;
+    }
+
+    @Override
+    public String viewGameStatistics(String gameName) {
+        return null;
+    }
+
+    @Override
+    public void logout() {
+
     }
 }
 

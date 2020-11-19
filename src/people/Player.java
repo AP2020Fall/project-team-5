@@ -1,12 +1,13 @@
 package people;
 
+import Menu.PlayerMenu;
 import gameStuff.Event;
 import gameStuff.Game;
 import gameStuff.GameLog;
 
 import java.util.ArrayList;
 
-public class Player extends User {
+public class Player extends User implements PlayerMenu {
     private int platoAge;
     private double moneyAmount;
     private int score;
@@ -58,4 +59,38 @@ public class Player extends User {
         return friendsRequests;
     }
 
+    @Override
+    public String showPoints(Player player) {
+        return null;
+    }
+
+    @Override
+    public String viewFavoriteGames() {
+        return null;
+    }
+
+    @Override
+    public String viewPlatoMessages() {
+        return null;
+    }
+
+    @Override
+    public String viewLastPlayed() {
+        return null;
+    }
+
+    @Override
+    public String viewAdminSuggestions() {
+        return null;
+    }
+
+    @Override
+    public void chooseSuggestedGame(Game game) {
+
+    }
+
+    @Override
+    public void addFriend(Player player, Player friend) {
+
+    }
 }
