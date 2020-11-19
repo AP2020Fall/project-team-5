@@ -3,34 +3,18 @@ package Menu;
 import gameStuff.Game;
 import people.Player;
 
-public class PlayerMenu {
-    public String showPoints(Player player){
-        return String.valueOf(player.getScore());
-    }
+public interface PlayerMenu {
+    String showPoints(Player player);
 
-    public String viewFavoriteGames(){
-        return "";
-    }
+    String viewFavoriteGames();
 
-    public String viewPlatoMessages(){
-        return "";
-    }
+    String viewPlatoMessages();
 
-    public String viewLastPlayed(){
-        return "";
-    }
+    String viewLastPlayed();
 
-    public String viewAdminSuggestions(){
-        return"";
-    }
+    String viewAdminSuggestions();
 
-    public void chooseSuggestedGame(Game game){
+    void chooseSuggestedGame(Game game);
 
-    }
-
-    public void addFriend(Player player, Player friend){
-        player.getFriends().add(friend);
-    }
-
-
+    void addFriend(Player player, Player friend);
 }

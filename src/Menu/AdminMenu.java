@@ -1,43 +1,23 @@
 package Menu;
 
-import gameStuff.Event;
-
 import java.util.Date;
 
-public class AdminMenu {
-    public void addEvent(int eventID, Date startDate, Date endDate, double score){
+public interface AdminMenu {
+    void addEvent(int eventID, Date startDate, Date endDate, double score);
 
-    }
+    String viewEvents();
 
-    public String viewEvents(){
-        return "";
-    }
+    void editEvent(int eventID, String field, String newValue);
 
-    public void editEvent(int eventID, String field, String newValue){
+    void removeEvent(int eventID);
 
-    }
+    void addSuggestion(String username, String gameName);
 
-    public void removeEvent(int eventID) {
+    String viewSuggestions();
 
-    }
+    void removeSuggestion(int suggestionID);
 
-    public void addSuggestion (String username, String gameName){
+    String viewUsers();
 
-    }
-
-    public String viewSuggestions(){
-        return "";
-    }
-
-    public void removeSuggestion(int suggestionID){
-
-    }
-
-    public String viewUsers(){
-        return"";
-    }
-
-    public void viewUserProfile(String username){
-
-    }
+    void viewUserProfile(String username);
 }
