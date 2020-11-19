@@ -7,7 +7,7 @@ import gameStuff.GameLog;
 import java.util.ArrayList;
 
 public class Player extends User {
-    private int numberOfDaysSinceRegisteration;
+    private int platoAge;
     private double moneyAmount;
     private int score;
     private GameLog gameLog;
@@ -35,7 +35,7 @@ public class Player extends User {
     }
 
     public int getNumberOfdaysSinceRegisteration() {
-        return numberOfDaysSinceRegisteration;
+        return platoAge;
     }
 
     public double getMoneyAmount() {
@@ -57,4 +57,5 @@ public class Player extends User {
     public ArrayList<Player> getFriendsRequests() {
         return friendsRequests;
     }
+
 }
