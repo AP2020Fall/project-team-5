@@ -3,30 +3,40 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="144.0" y="304.0">Player</node>
-    <node x="87.0" y="0.0">User</node>
-    <node x="0.0" y="403.5">Admin</node>
-    <node x="292.0" y="603.0">Game</node>
-    <node x="155.0" y="603.0">Event</node>
-    <node x="0.0" y="603.0">GameLog</node>
-    <node x="415.0" y="0.0">Main</node>
+    <node x="662.0" y="515.0">gameStuff.GameLog</node>
+    <node x="233.5" y="0.0">gameStuff.Game</node>
+    <node x="0.0" y="841.0">people.Admin</node>
+    <node x="225.0" y="305.0">gameStuff.BattleSea</node>
+    <node x="0.0" y="305.0">gameStuff.DotsAndBoxes</node>
+    <node x="357.0" y="515.0">gameStuff.Event</node>
+    <node x="6.5" y="515.0">people.User</node>
+    <node x="421.0" y="194.0">people.Player</node>
+    <node x="0.0" y="963.0">Main</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="Admin" target="User">
-      <point x="0.0" y="-27.5" />
-      <point x="62.0" y="279.0" />
-      <point x="123.25" y="279.0" />
-      <point x="-36.25" y="127.0" />
+    <edge source="people.Admin" target="people.User">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="138.0" />
     </edge>
-    <edge source="Player" target="User">
-      <point x="0.0" y="-127.0" />
-      <point x="257.0" y="279.0" />
-      <point x="195.75" y="279.0" />
-      <point x="36.25" y="127.0" />
+    <edge source="people.Player" target="gameStuff.Game">
+      <point x="0.0" y="-138.0" />
+      <point x="575.0" y="169.0" />
+      <point x="366.0" y="169.0" />
+      <point x="53.0" y="72.0" />
+    </edge>
+    <edge source="gameStuff.BattleSea" target="gameStuff.Game">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="gameStuff.DotsAndBoxes" target="gameStuff.Game">
+      <point x="0.0" y="-27.0" />
+      <point x="102.5" y="169.0" />
+      <point x="260.0" y="169.0" />
+      <point x="-53.0" y="72.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="287.5" y="322.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="467.86363636363626" y="305.5" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
@@ -36,6 +46,6 @@
     <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>Project Files</SCOPE>
-  <VISIBILITY>packageLocal</VISIBILITY>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 

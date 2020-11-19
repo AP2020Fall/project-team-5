@@ -1,3 +1,5 @@
+package people;
+
 public class User {
     private String firstname;
     private String lastName;
@@ -7,15 +9,24 @@ public class User {
     private String email;
     private String phoneNumber;
 
-    public void logIn(){
+    public User(String firstname, String lastName, String userName, String password, String email, String phoneNumber) {
+        this.firstname = firstname;
+        this.lastName = lastName;
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void logIn() {
 
     }
 
-    public void logOut(){
+    public void logOut() {
 
     }
 
-    public void editProfile(){
+    public void editProfile() {
 
     }
 
