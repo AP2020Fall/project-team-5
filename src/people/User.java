@@ -1,9 +1,11 @@
 package people;
 
+import Menu.FriendsMenu;
+import Menu.LoginMenu;
 import Menu.RegisterMenu;
 import Menu.UserMenu;
 
-public class User implements UserMenu, RegisterMenu {
+public class User implements UserMenu, RegisterMenu, LoginMenu, FriendsMenu {
     private String firstname;
     private String lastName;
     private String userID;
@@ -114,6 +116,51 @@ public class User implements UserMenu, RegisterMenu {
 
     @Override
     public void Register(String userName, String password) {
+
+    }
+
+    @Override
+    public void delete(String userName) {
+
+    }
+
+    @Override
+    public void login(String userName) {
+
+    }
+
+    @Override
+    public String showFriends(User user) {
+        return null;
+    }
+
+    @Override
+    public void remove(User user) {
+
+    }
+
+    @Override
+    public String viewUserProfile(User user) {
+        return null;
+    }
+
+    @Override
+    public String showFriendsRequest() {
+        return null;
+    }
+
+    @Override
+    public void add(User user) {
+
+    }
+
+    @Override
+    public void accept(User user) {
+
+    }
+
+    @Override
+    public void decline(User user) {
 
     }
 }
