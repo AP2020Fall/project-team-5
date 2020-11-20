@@ -1,6 +1,8 @@
 package gameStuff;
 
-public class Game {
+import Menu.GameMenu;
+
+public class Game implements GameMenu {
     private String gameID;
     private String gameName;
 
@@ -23,5 +25,51 @@ public class Game {
 
     public void setScore() {
 
+    }
+
+
+    @Override
+    public void open(String gameName) {
+
+    }
+
+    @Override
+    public String showScoreboard(Game game) {
+        return null;
+    }
+
+    @Override
+    public String details(Game game) {
+        return null;
+    }
+
+    @Override
+    public String showLog(GameLog game) {
+        return null;
+    }
+
+    @Override
+    public String showWinsCount(Game game) {
+        return null;
+    }
+
+    @Override
+    public String showPlayedCount(Game game) {
+        return null;
+    }
+
+    @Override
+    public void addToFavorite(Game game) {
+
+    }
+
+    @Override
+    public void runGame(Game game) {
+
+    }
+
+    @Override
+    public String showPoints(Game game) {
+        return null;
     }
 }
