@@ -2,6 +2,7 @@ package gameStuff;
 
 import Menu.GameMenu;
 import gameStuff.battleSea.BattleSea;
+import gameStuff.dotsAndBoxes.DotsAndBoxes;
 
 public class Game implements GameMenu {
     private String gameID;
@@ -32,7 +33,7 @@ public class Game implements GameMenu {
     @Override
     public void open(String gameName) {
         if(gameName.equals("Dots And Boxes"))
-            gameStuff.DotsAndBoxes.startDotsAndBoxes();
+            DotsAndBoxes.startDotsAndBoxes();
         if(gameName.equals("Battle Sea"))
             BattleSea.startBattleSea();
 

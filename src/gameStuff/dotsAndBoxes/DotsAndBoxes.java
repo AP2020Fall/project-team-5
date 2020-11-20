@@ -1,5 +1,6 @@
-package gameStuff;
+package gameStuff.dotsAndBoxes;
 
+import gameStuff.Game;
 import people.Player;
 
 public class DotsAndBoxes extends Game {
@@ -26,33 +27,22 @@ public class DotsAndBoxes extends Game {
     public void showWhoseTurn(Player player1, Player player2){
 
     }
-    public void makeSquare(){
+    public void makeBox(){
 
     }
     public void gainScore(){
 
     }
-    public void drawLine(Player player){
 
-    }
     public void limitOfCoordinatePlane(){
 
     }
-    public void possibilityOfDrawLine(){
 
-    }
-    public void findAvailableDots(){
 
-    }
     public void showTable(){
 
     }
-    public void showDrawnLines(){
 
-    }
-    public void showAvailableDots(){
-
-    }
     public void showGameResult(){
 
     }
