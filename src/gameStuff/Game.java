@@ -30,6 +30,10 @@ public class Game implements GameMenu {
 
     @Override
     public void open(String gameName) {
+        if(gameName.equals("Dots And Boxes"))
+            gameStuff.DotsAndBoxes.openDotsAndBoxes();
+        if(gameName.equals("Battle Sea"))
+            gameStuff.BattleSea.openBattleSea();
 
     }
 

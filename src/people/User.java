@@ -1,8 +1,9 @@
 package people;
 
+import Menu.RegisterMenu;
 import Menu.UserMenu;
 
-public class User implements UserMenu {
+public class User implements UserMenu, RegisterMenu {
     private String firstname;
     private String lastName;
     private String userID;
@@ -108,6 +109,11 @@ public class User implements UserMenu {
 
     @Override
     public void logout() {
+
+    }
+
+    @Override
+    public void Register(String userName, String password) {
 
     }
 }
