@@ -20,7 +20,7 @@ public class BattleSea extends Game {
 
     }
 
-    public void setDirection(String direction){
+    public void setDirection(Direction direction){
         //vertical or horizontal
     }
 
