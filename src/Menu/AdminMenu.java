@@ -11,7 +11,7 @@ public interface AdminMenu {
 
     void removeEvent(int eventID);
 
-    void addSuggestion(String username, String gameName);
+    void addSuggestion(String userName, String gameName);
 
     String viewSuggestions();
 
@@ -19,5 +19,5 @@ public interface AdminMenu {
 
     String viewUsers();
 
-    void viewUserProfile(String username);
+    void viewUserProfile(String userName);
 }
