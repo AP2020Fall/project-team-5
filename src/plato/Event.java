@@ -1,4 +1,4 @@
-package gameStuff;
+package plato;
 
 import people.Admin;
 import people.Player;

@@ -1,4 +1,4 @@
-package gameStuff.dotsAndBoxes;
+package plato.dotsAndBoxes;
 
 import people.Player;
 

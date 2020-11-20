@@ -1,6 +1,6 @@
 package Menu;
 
-import gameStuff.Game;
+import plato.Game;
 import people.Player;
 
 public interface PlayerMenu {

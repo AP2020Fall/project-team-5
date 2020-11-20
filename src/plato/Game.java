@@ -1,8 +1,8 @@
-package gameStuff;
+package plato;
 
 import Menu.GameMenu;
-import gameStuff.battleSea.BattleSea;
-import gameStuff.dotsAndBoxes.DotsAndBoxes;
+import plato.battleSea.BattleSea;
+import plato.dotsAndBoxes.DotsAndBoxes;
 
 public class Game implements GameMenu {
     private String gameID;

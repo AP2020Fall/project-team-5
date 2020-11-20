@@ -1,6 +1,6 @@
-package gameStuff.dotsAndBoxes;
+package plato.dotsAndBoxes;
 
-import gameStuff.Game;
+import plato.Game;
 import people.Player;
 
 public class DotsAndBoxes extends Game {

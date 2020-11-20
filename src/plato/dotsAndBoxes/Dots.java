@@ -1,4 +1,4 @@
-package gameStuff.dotsAndBoxes;
+package plato.dotsAndBoxes;
 
 public class Dots {
     public void findAvailableDots(){

@@ -1,6 +1,6 @@
-package gameStuff.battleSea;
+package plato.battleSea;
 
-import gameStuff.Game;
+import plato.Game;
 import people.Player;
 
 public class BattleSea extends Game {

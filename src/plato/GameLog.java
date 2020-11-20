@@ -1,4 +1,4 @@
-package gameStuff;
+package plato;
 
 public class GameLog {
     private Integer numberOfPlaying;

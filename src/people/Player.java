@@ -1,9 +1,9 @@
 package people;
 
 import Menu.PlayerMenu;
-import gameStuff.Event;
-import gameStuff.Game;
-import gameStuff.GameLog;
+import plato.Event;
+import plato.Game;
+import plato.GameLog;
 
 import java.util.ArrayList;
 

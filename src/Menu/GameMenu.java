@@ -1,7 +1,7 @@
 package Menu;
 
-import gameStuff.Game;
-import gameStuff.GameLog;
+import plato.Game;
+import plato.GameLog;
 
 public interface GameMenu {
     void open(String gameName);
