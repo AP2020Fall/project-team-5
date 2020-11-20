@@ -9,8 +9,6 @@ public class DotsAndBoxes extends Game {
     }
     static public void startDotsAndBoxes(){
 
-
-
     }
     public void players(Player player1, Player player2){
 
