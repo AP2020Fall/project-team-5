@@ -4,7 +4,7 @@ public class BattleSea extends Game {
     public BattleSea(String gameID, String gameName) {
         super(gameID, gameName);
     }
-    static public void openBattleSea(){
+    static public void startBattleSea(){
 
 
     }
