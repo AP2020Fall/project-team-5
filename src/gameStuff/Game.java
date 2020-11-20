@@ -1,6 +1,7 @@
 package gameStuff;
 
 import Menu.GameMenu;
+import people.Player;
 
 public class Game implements GameMenu {
     private String gameID;
@@ -31,9 +32,9 @@ public class Game implements GameMenu {
     @Override
     public void open(String gameName) {
         if(gameName.equals("Dots And Boxes"))
-            gameStuff.DotsAndBoxes.openDotsAndBoxes();
+            gameStuff.DotsAndBoxes.startDotsAndBoxes();
         if(gameName.equals("Battle Sea"))
-            gameStuff.BattleSea.openBattleSea();
+            gameStuff.BattleSea.startBattleSea();
 
     }
 
