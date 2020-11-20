@@ -37,4 +37,6 @@ public class GameLog {
     static public void showNumberOfPlaying(int numberOfPlaying) {
 
     }
+
+
 }
