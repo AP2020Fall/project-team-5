@@ -1,7 +1,7 @@
 package gameStuff;
 
 import Menu.GameMenu;
-import people.Player;
+import gameStuff.battleSea.BattleSea;
 
 public class Game implements GameMenu {
     private String gameID;
@@ -34,7 +34,7 @@ public class Game implements GameMenu {
         if(gameName.equals("Dots And Boxes"))
             gameStuff.DotsAndBoxes.startDotsAndBoxes();
         if(gameName.equals("Battle Sea"))
-            gameStuff.BattleSea.startBattleSea();
+            BattleSea.startBattleSea();
 
     }
 
