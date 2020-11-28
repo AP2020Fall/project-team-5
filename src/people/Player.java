@@ -35,6 +35,10 @@ public class Player extends User implements PlayerMenu {
 
     }
 
+    public boolean searchFriends(String friendID) {
+        return false;
+    }
+
     public int getNumberOfdaysSinceRegisteration() {
         return platoAge;
     }
