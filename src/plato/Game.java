@@ -1,7 +1,7 @@
 package plato;
 
 import Menu.GameMenu;
-import plato.battleSea.BattleSea;
+import plato.battleSea.BattleSeaController;
 import plato.dotsAndBoxes.DotsAndBoxes;
 
 public class Game implements GameMenu {
@@ -35,7 +35,7 @@ public class Game implements GameMenu {
         if(gameName.equals("Dots And Boxes"))
             DotsAndBoxes.startDotsAndBoxes();
         if(gameName.equals("Battle Sea"))
-            BattleSea.startBattleSea();
+            BattleSeaController.startBattleSea();
 
     }
 
