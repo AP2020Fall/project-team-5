@@ -3,235 +3,97 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="1185.9819444444445" y="1617.0">Menu.PlayerMenu</node>
-    <node x="218.30231036324767" y="1202.5">people.Admin</node>
-    <node x="882.4769017094015" y="171.0">plato.GameLog</node>
-    <node x="284.47690170940155" y="238.0">Menu.RegisterMenu</node>
-    <node x="1105.2269017094015" y="639.0">Menu.GameMenu</node>
-    <node x="1714.2269017094015" y="0.0">plato.dotsAndBoxes.Dots</node>
-    <node x="382.4335336538462" y="429.0">people.User</node>
-    <node x="667.7269017094015" y="1959.0">people.Player</node>
-    <node x="0.0" y="172.0">Menu.UserMenu</node>
-    <node x="1343.2269017094015" y="561.0">plato.battleSea.BattleSea</node>
-    <node x="1390.7269017094015" y="205.0">plato.battleSea.Ship</node>
-    <node x="1415.7269017094015" y="0.0">plato.battleSea.Direction</node>
-    <node x="113.43353365384621" y="639.0">Menu.AdminMenu</node>
-    <node x="716.4769017094015" y="227.0">Menu.LoginMenu</node>
-    <node x="722.7269017094015" y="2439.0">plato.dotsAndBoxes.Line</node>
-    <node x="1120.9819444444445" y="1169.0">plato.Game</node>
-    <node x="843.2269017094015" y="594.5">plato.dotsAndBoxes.DotsAndBoxes</node>
-    <node x="244.30231036324767" y="1561.0">plato.Event</node>
-    <node x="1942.2269017094015" y="0.0">Main</node>
-    <node x="497.4769017094015" y="172.0">Menu.FriendsMenu</node>
+    <node x="46.5" y="469.0">Menu.PlayerMenu</node>
+    <node x="308.0" y="1414.0">plato.GameLog</node>
+    <node x="485.875" y="1015.5">people.Admin</node>
+    <node x="0.0" y="66.0">Menu.RegisterMenu</node>
+    <node x="1086.25" y="0.0">Menu.GameMenu</node>
+    <node x="1287.0" y="1414.0">plato.dotsAndBoxes.Dots</node>
+    <node x="306.5" y="237.0">people.User</node>
+    <node x="119.875" y="938.0">people.Player</node>
+    <node x="216.0" y="0.0">Menu.UserMenu</node>
+    <node x="1183.5" y="674.0">plato.battleSea.BattleSea</node>
+    <node x="625.0" y="1414.0">plato.battleSea.Direction</node>
+    <node x="848.0" y="1414.0">plato.battleSea.Ship</node>
+    <node x="625.5" y="447.0">Menu.AdminMenu</node>
+    <node x="696.0" y="55.0">Menu.LoginMenu</node>
+    <node x="1042.0" y="1414.0">plato.dotsAndBoxes.Line</node>
+    <node x="1086.25" y="281.0">plato.Game</node>
+    <node x="923.5" y="707.5">plato.dotsAndBoxes.DotsAndBoxes</node>
+    <node x="0.0" y="1414.0">plato.Event</node>
+    <node x="1518.0" y="1414.0">Main</node>
+    <node x="476.0" y="0.0">Menu.FriendsMenu</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="Menu.PlayerMenu" target="people.Player">
-      <point x="59.50000000000006" y="93.0" />
-      <point x="1364.4819444444445" y="1929.0" />
-      <point x="940.1884401709399" y="1929.0" />
-      <point x="118.46153846153845" y="-215.0" />
-    </edge>
-    <edge source="plato.Game" target="plato.dotsAndBoxes.DotsAndBoxes">
-      <point x="-96.88888888888891" y="-171.0" />
-      <point x="1133.0930555555556" y="1139.0" />
-      <point x="933.6019017094015" y="1139.0" />
-      <point x="-30.125" y="159.5" />
-    </edge>
-    <edge source="plato.dotsAndBoxes.DotsAndBoxes" target="people.Player">
-      <point x="-90.375" y="159.5" />
-      <point x="873.3519017094015" y="1149.0" />
-      <point x="993.4124999999999" y="1149.0" />
-      <point x="993.4124999999999" y="1899.0" />
-      <point x="869.1115170940168" y="1899.0" />
-      <point x="47.38461538461536" y="-215.0" />
-    </edge>
-    <edge source="plato.dotsAndBoxes.Line" target="people.Player">
-      <point x="0.0" y="-49.0" />
-      <point x="0.0" y="215.0" />
-    </edge>
-    <edge source="Menu.GameMenu" target="plato.Game">
-      <point x="54.5" y="115.0" />
-      <point x="1268.7269017094015" y="1149.0" />
-      <point x="1254.2041666666667" y="1149.0" />
-      <point x="24.22222222222217" y="-171.0" />
-    </edge>
-    <edge source="people.Player" target="plato.Event">
-      <point x="-118.46153846153857" y="-215.0" />
-      <point x="703.265363247863" y="1929.0" />
-      <point x="309.30231036324767" y="1929.0" />
-      <point x="-65.0" y="149.0" />
-    </edge>
     <edge source="people.User" target="Menu.UserMenu">
-      <point x="-119.60000000000002" y="-325.0" />
-      <point x="412.3335336538462" y="409.0" />
-      <point x="180.0" y="409.0" />
-      <point x="60.0" y="93.0" />
-    </edge>
-    <edge source="people.User" target="people.Player">
-      <point x="0.0" y="325.0" />
-      <point x="531.9335336538462" y="1149.0" />
-      <point x="552.5523103632477" y="1149.0" />
-      <point x="552.5523103632477" y="1909.0" />
-      <point x="750.6499786324785" y="1909.0" />
-      <point x="-71.0769230769231" y="-215.0" />
+      <point x="-37.375" y="-325.5" />
+      <point x="418.625" y="207.0" />
+      <point x="336.0" y="207.0" />
+      <point x="0.0" y="93.5" />
     </edge>
     <edge source="people.Admin" target="people.User">
-      <point x="104.0" y="-137.5" />
-      <point x="478.30231036324767" y="1149.0" />
-      <point x="472.13353365384626" y="1149.0" />
-      <point x="-59.799999999999955" y="325.0" />
+      <point x="-77.75" y="-138.0" />
+      <point x="563.625" y="913.0" />
+      <point x="530.75" y="913.0" />
+      <point x="74.75" y="325.5" />
     </edge>
     <edge source="people.Player" target="Menu.PlayerMenu">
-      <point x="94.76923076923072" y="-215.0" />
-      <point x="916.4961324786323" y="1919.0" />
-      <point x="1245.4819444444445" y="1919.0" />
-      <point x="-59.5" y="93.0" />
-    </edge>
-    <edge source="plato.battleSea.BattleSea" target="plato.battleSea.Direction">
-      <point x="81.5" y="-193.0" />
-      <point x="1587.7269017094015" y="409.0" />
-      <point x="1548.2269017094015" y="409.0" />
-      <point x="1548.2269017094015" y="146.0" />
-      <point x="1551.4769017094015" y="146.0" />
-      <point x="45.25" y="60.5" />
-    </edge>
-    <edge source="plato.battleSea.BattleSea" target="plato.battleSea.Ship">
-      <point x="-81.5" y="-193.0" />
-      <point x="1424.7269017094015" y="409.0" />
-      <point x="1464.2269017094015" y="409.0" />
-      <point x="0.0" y="60.0" />
-    </edge>
-    <edge source="Menu.GameMenu" target="plato.GameLog">
-      <point x="0.0" y="-115.0" />
-      <point x="1214.2269017094015" y="409.0" />
-      <point x="1119.6019017094015" y="409.0" />
-      <point x="101.625" y="94.0" />
-    </edge>
-    <edge source="plato.Game" target="plato.battleSea.BattleSea">
-      <point x="48.44444444444434" y="-171.0" />
-      <point x="1278.4263888888888" y="1129.0" />
-      <point x="1383.9769017094015" y="1129.0" />
-      <point x="-122.25" y="193.0" />
+      <point x="-77.0" y="-215.5" />
+      <point x="196.875" y="913.0" />
+      <point x="166.5" y="913.0" />
+      <point x="0.0" y="93.5" />
     </edge>
     <edge source="people.Player" target="people.User">
-      <point x="-23.692307692307736" y="-215.0" />
-      <point x="798.0345940170937" y="1889.0" />
-      <point x="638.0523103632477" y="1889.0" />
-      <point x="638.0523103632477" y="1149.0" />
-      <point x="651.5335336538462" y="1149.0" />
-      <point x="119.60000000000002" y="325.0" />
-    </edge>
-    <edge source="Menu.FriendsMenu" target="people.User">
-      <point x="49.75" y="93.0" />
-      <point x="646.7269017094015" y="379.0" />
-      <point x="591.7335336538462" y="379.0" />
-      <point x="59.799999999999955" y="-325.0" />
+      <point x="77.0" y="-215.5" />
+      <point x="350.875" y="913.0" />
+      <point x="381.25" y="913.0" />
+      <point x="-74.75" y="325.5" />
     </edge>
     <edge source="people.User" target="Menu.RegisterMenu">
-      <point x="-59.80000000000007" y="-325.0" />
-      <point x="472.13353365384614" y="399.0" />
-      <point x="380.97690170940155" y="399.0" />
-      <point x="0.0" y="27.0" />
-    </edge>
-    <edge source="people.Player" target="plato.Game">
-      <point x="71.0769230769231" y="-215.0" />
-      <point x="892.8038247863246" y="1909.0" />
-      <point x="1175.4819444444443" y="1909.0" />
-      <point x="-54.5" y="171.0" />
-    </edge>
-    <edge source="plato.Game" target="plato.GameLog">
-      <point x="-24.22222222222217" y="-171.0" />
-      <point x="1205.7597222222223" y="1109.0" />
-      <point x="1094.7269017094015" y="1109.0" />
-      <point x="1094.7269017094015" y="409.0" />
-      <point x="1051.8519017094015" y="409.0" />
-      <point x="33.875" y="94.0" />
+      <point x="-112.125" y="-325.5" />
+      <point x="343.875" y="217.0" />
+      <point x="98.0" y="217.0" />
+      <point x="0.0" y="27.5" />
     </edge>
     <edge source="plato.battleSea.BattleSea" target="plato.Game">
-      <point x="-40.75" y="193.0" />
-      <point x="1465.4769017094015" y="1139.0" />
-      <point x="1302.6486111111112" y="1139.0" />
-      <point x="72.66666666666674" y="-171.0" />
-    </edge>
-    <edge source="Menu.UserMenu" target="people.Player">
-      <point x="-60.0" y="93.0" />
-      <point x="60.0" y="1939.0" />
-      <point x="679.5730555555554" y="1939.0" />
-      <point x="-142.1538461538462" y="-215.0" />
+      <point x="0.0" y="-193.5" />
+      <point x="1346.0" y="649.0" />
+      <point x="1249.0" y="649.0" />
+      <point x="54.25" y="171.5" />
     </edge>
     <edge source="plato.Game" target="Menu.GameMenu">
-      <point x="0.0" y="-171.0" />
-      <point x="1229.9819444444445" y="1099.0" />
-      <point x="1159.7269017094015" y="1099.0" />
-      <point x="-54.5" y="115.0" />
-    </edge>
-    <edge source="plato.Event" target="people.Admin">
-      <point x="0.0" y="-149.0" />
-      <point x="0.0" y="137.5" />
-    </edge>
-    <edge source="Menu.PlayerMenu" target="plato.Game">
-      <point x="0.0" y="-93.0" />
-      <point x="1304.9819444444445" y="1536.0" />
-      <point x="1284.4819444444445" y="1536.0" />
-      <point x="54.5" y="171.0" />
+      <point x="0.0" y="-171.5" />
+      <point x="0.0" y="115.5" />
     </edge>
     <edge source="plato.dotsAndBoxes.DotsAndBoxes" target="plato.Game">
-      <point x="30.125" y="159.5" />
-      <point x="993.8519017094015" y="1129.0" />
-      <point x="1157.3152777777777" y="1129.0" />
-      <point x="-72.66666666666674" y="-171.0" />
+      <point x="0.0" y="-160.0" />
+      <point x="1043.5" y="649.0" />
+      <point x="1140.5" y="649.0" />
+      <point x="-54.25" y="171.5" />
     </edge>
     <edge source="people.User" target="Menu.LoginMenu">
-      <point x="119.60000000000002" y="-325.0" />
-      <point x="651.5335336538462" y="389.0" />
-      <point x="789.4769017094015" y="389.0" />
-      <point x="0.0" y="38.0" />
-    </edge>
-    <edge source="plato.battleSea.Ship" target="plato.battleSea.Direction">
-      <point x="0.0" y="-60.0" />
-      <point x="1464.2269017094015" y="146.0" />
-      <point x="1460.9769017094015" y="146.0" />
-      <point x="-45.25" y="60.5" />
+      <point x="112.125" y="-325.5" />
+      <point x="568.125" y="217.0" />
+      <point x="770.5" y="217.0" />
+      <point x="0.0" y="38.5" />
     </edge>
     <edge source="people.User" target="Menu.FriendsMenu">
-      <point x="0.0" y="-325.0" />
-      <point x="531.9335336538462" y="409.0" />
-      <point x="547.2269017094015" y="409.0" />
-      <point x="-49.75" y="93.0" />
+      <point x="37.375" y="-325.5" />
+      <point x="493.375" y="207.0" />
+      <point x="576.0" y="207.0" />
+      <point x="0.0" y="93.5" />
     </edge>
     <edge source="people.Admin" target="Menu.AdminMenu">
-      <point x="-104.0" y="-137.5" />
-      <point x="270.30231036324767" y="1149.0" />
-      <point x="237.9335336538462" y="1149.0" />
-      <point x="0.0" y="115.0" />
-    </edge>
-    <edge source="people.Player" target="plato.GameLog">
-      <point x="23.692307692307622" y="-215.0" />
-      <point x="845.4192094017092" y="1939.0" />
-      <point x="832.7269017094015" y="1939.0" />
-      <point x="832.7269017094015" y="409.0" />
-      <point x="984.1019017094015" y="409.0" />
-      <point x="-33.875" y="94.0" />
-    </edge>
-    <edge source="plato.Event" target="people.Player">
-      <point x="65.0" y="149.0" />
-      <point x="439.30231036324767" y="1919.0" />
-      <point x="726.9576709401706" y="1919.0" />
-      <point x="-94.76923076923083" y="-215.0" />
-    </edge>
-    <edge source="plato.battleSea.BattleSea" target="people.Player">
-      <point x="122.25" y="193.0" />
-      <point x="1628.4769017094015" y="1149.0" />
-      <point x="1552.7784909188033" y="1149.0" />
-      <point x="1552.7784909188033" y="1939.0" />
-      <point x="963.8807478632477" y="1939.0" />
-      <point x="142.1538461538462" y="-215.0" />
+      <point x="77.75" y="-138.0" />
+      <point x="719.125" y="913.0" />
+      <point x="752.0" y="913.0" />
+      <point x="0.0" y="115.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0083285135916715" x="871.1472901104673" y="723.6259153135944" />
+  <settings layout="Hierarchic Group" zoom="0.3866128101557992" x="834.0" y="856.5" />
   <SelectedNodes>
-    <node>plato.battleSea.BattleSea</node>
+    <node>Menu.FriendsMenu</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
@@ -241,6 +103,6 @@
     <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>Project Files</SCOPE>
-  <VISIBILITY>packageLocal</VISIBILITY>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 
