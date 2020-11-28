@@ -1,4 +1,4 @@
-package plato.battleSea;
+package plato.view;
 
 import people.Player;
 

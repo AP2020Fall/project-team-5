@@ -1,7 +1,7 @@
 package plato;
 
 import Menu.GameMenu;
-import plato.battleSea.BattleSeaController;
+import plato.controller.BattleSeaController;
 import plato.dotsAndBoxes.DotsAndBoxes;
 
 public class Game implements GameMenu {

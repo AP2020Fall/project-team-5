@@ -1,4 +1,4 @@
-package plato.battleSea;
+package plato.model;
 
 import plato.Game;
 
