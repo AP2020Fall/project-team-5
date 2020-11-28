@@ -1,6 +1,7 @@
-package plato.battleSea;
+package plato.controller;
 
 import people.Player;
+import plato.model.BattleSeaModel;
 
 public class BattleSeaController {
     static public void startBattleSea(){
