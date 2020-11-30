@@ -1,4 +1,4 @@
-package plato;
+package plato.model;
 
 import people.model.Admin;
 import people.model.Player;
@@ -40,29 +40,7 @@ public class Event {
         return eventID;
     }
 
-    public void addEvent(String eventID, Admin userID) {
 
-    }
-
-    public void startEvent(String eventID, Date startOfEvent, Admin userID) {
-
-    }
-
-    public void endEvent(String eventID, Date endOfEvent, Admin userID) {
-
-    }
-
-    public void deleteEvent(String eventID, Admin userID) {
-
-    }
-
-    public void participateInEvent(String eventID, Player userID) {
-
-    }
-
-    public void removeEvent(String eventID, Player userID) {
-
-    }
 
 
 }

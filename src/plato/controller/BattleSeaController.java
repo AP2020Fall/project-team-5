@@ -2,20 +2,22 @@ package plato.controller;
 
 import people.model.Player;
 import plato.model.BattleSea;
+import plato.model.Direction;
+import plato.model.Ship;
 
-public class BattleSeaController {
+public class BattleSeaController extends GameController{
     static public void startBattleSea(){
 
     }
-    public void assignRandomCoordinates(Player player, BattleSea.Ship ship, int xPosition, int yPosition) {
+    public void assignRandomCoordinates(Player player, Ship ship, int xPosition, int yPosition) {
 
     }
 
-    public void changeShipCoordinates(Player player, BattleSea.Ship ship, int xPosition, int yPosition) {
+    public void changeShipCoordinates(Player player, Ship ship, int xPosition, int yPosition) {
 
     }
 
-    public void setDirection(BattleSea.Direction direction){
+    public void setDirection(Direction direction){
         //vertical or horizontal
     }
 
