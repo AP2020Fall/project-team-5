@@ -1,6 +1,6 @@
 package Menu;
 
-import people.User;
+import people.model.User;
 
 public interface FriendsMenu {
     String showFriends(User user);

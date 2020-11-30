@@ -1,6 +1,6 @@
 package Menu;
 
-import people.Player;
+import people.model.Player;
 
 public interface UserMenu {
     String viewAccountMenu();

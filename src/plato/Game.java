@@ -28,11 +28,4 @@ public abstract class Game implements GameMenu {
     public void setScore() {
 
     }
-
-
-
-
-
-
-
 }

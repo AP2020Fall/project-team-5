@@ -1,7 +1,7 @@
 package plato;
 
-import people.Admin;
-import people.Player;
+import people.model.Admin;
+import people.model.Player;
 
 import java.util.Date;
 

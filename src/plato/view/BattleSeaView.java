@@ -1,6 +1,6 @@
 package plato.view;
 
-import people.Player;
+import people.model.Player;
 
 public class BattleSeaView {
     public void showShips(Player player){

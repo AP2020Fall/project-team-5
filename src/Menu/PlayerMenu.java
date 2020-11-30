@@ -1,7 +1,7 @@
 package Menu;
 
 import plato.Game;
-import people.Player;
+import people.model.Player;
 
 public interface PlayerMenu {
     String showPoints(Player player);
