@@ -1,7 +1,6 @@
 package plato.controller;
 
 import people.model.Player;
-import plato.model.BattleSea;
 import plato.model.Direction;
 import plato.model.Ship;
 
