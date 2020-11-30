@@ -1,7 +1,6 @@
 package plato.dotsAndBoxes;
 
-import plato.Game;
-import people.Player;
+import plato.model.Game;
 
 public class DotsAndBoxes extends Game {
     public DotsAndBoxes(String gameID, String gameName) {

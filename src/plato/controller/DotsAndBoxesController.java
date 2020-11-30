@@ -1,6 +1,6 @@
 package plato.controller;
 
-import people.Player;
+import people.model.Player;
 import plato.dotsAndBoxes.DotsAndBoxes;
 
 public class DotsAndBoxesController extends DotsAndBoxes {
