@@ -1,4 +1,4 @@
-package plato;
+package plato.model;
 
 public class GameLog {
     private Integer numberOfPlaying;
@@ -30,13 +30,7 @@ public class GameLog {
         return gameScore;
     }
 
-    static public void showNumberOfWinning(int numberOfWinning) {
 
-    }
-
-    static public void showNumberOfPlaying(int numberOfPlaying) {
-
-    }
 
 
 }

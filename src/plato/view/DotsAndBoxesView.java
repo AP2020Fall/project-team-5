@@ -1,7 +1,7 @@
 package plato.view;
 
 import people.model.Player;
-import plato.dotsAndBoxes.DotsAndBoxes;
+
 
 public class DotsAndBoxesView extends GameView {
 

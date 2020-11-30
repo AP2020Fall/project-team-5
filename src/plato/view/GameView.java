@@ -1,7 +1,7 @@
 package plato.view;
 
 import plato.model.Game;
-import plato.GameLog;
+import plato.model.GameLog;
 
 public class GameView {
 

@@ -1,13 +1,13 @@
 package plato.controller;
 
 import plato.model.Game;
-import plato.dotsAndBoxes.DotsAndBoxes;
+
 
 public class GameController {
 
     public void open(String gameName) {
         if(gameName.equals("Dots And Boxes"))
-            DotsAndBoxes.startDotsAndBoxes();
+            DotsAndBoxesController.startDotsAndBoxes();
         if(gameName.equals("Battle Sea"))
             BattleSeaController.startBattleSea();
 

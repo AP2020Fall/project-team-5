@@ -1,6 +1,6 @@
 package people.model;
 
-import plato.GameLog;
+import plato.model.GameLog;
 
 import java.util.ArrayList;
 

@@ -4,7 +4,7 @@ import people.model.Player;
 import plato.model.Direction;
 import plato.model.Ship;
 
-public class BattleSeaController {
+public class BattleSeaController extends GameController{
     static public void startBattleSea(){
 
     }

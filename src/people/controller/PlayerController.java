@@ -2,7 +2,7 @@ package people.controller;
 
 import people.model.Player;
 import people.model.User;
-import plato.Event;
+import plato.model.Event;
 import plato.model.Game;
 
 public class PlayerController extends UserController{
