@@ -3,7 +3,7 @@ package people.controller;
 import people.model.Player;
 import people.model.User;
 import plato.Event;
-import plato.Game;
+import plato.model.Game;
 
 public class PlayerController extends UserController{
     public void participateInEvent(Event event) {

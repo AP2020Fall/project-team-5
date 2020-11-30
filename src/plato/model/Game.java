@@ -1,10 +1,6 @@
-package plato;
+package plato.model;
 
-import Menu.GameMenu;
-import plato.controller.BattleSeaController;
-import plato.dotsAndBoxes.DotsAndBoxes;
-
-public abstract class Game implements GameMenu {
+public class Game {
     private String gameID;
     private String gameName;
 

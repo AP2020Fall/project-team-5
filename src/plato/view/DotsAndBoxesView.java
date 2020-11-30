@@ -3,11 +3,8 @@ package plato.view;
 import people.model.Player;
 import plato.dotsAndBoxes.DotsAndBoxes;
 
-public class DotsAndBoxesView extends DotsAndBoxes {
+public class DotsAndBoxesView extends GameView {
 
-    public DotsAndBoxesView(String gameID, String gameName) {
-        super(gameID, gameName);
-    }
     public void showWhoseTurn(Player player1, Player player2){
 
     }
