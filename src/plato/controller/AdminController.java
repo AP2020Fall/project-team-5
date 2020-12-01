@@ -1,4 +1,4 @@
-package people.controller;
+package plato.controller;
 
 import java.util.Date;
 

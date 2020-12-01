@@ -17,8 +17,6 @@ public class Game {
         return gameName;
     }
 
-
-
     public void setScore() {
 
     }

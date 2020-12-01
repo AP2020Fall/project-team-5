@@ -1,8 +1,5 @@
 package plato.model;
 
-import people.model.Admin;
-import people.model.Player;
-
 import java.util.Date;
 
 public class Event {

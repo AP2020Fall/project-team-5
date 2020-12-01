@@ -1,6 +1,6 @@
-package people.view;
+package plato.view;
 
-import people.model.Player;
+import plato.model.Player;
 
 public class PlayerView extends UserView{
     public String showPoints(Player player) {

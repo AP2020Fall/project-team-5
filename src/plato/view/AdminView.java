@@ -1,4 +1,4 @@
-package people.view;
+package plato.view;
 
 public class AdminView extends UserView{
     public String viewEvents() {

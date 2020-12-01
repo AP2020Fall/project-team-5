@@ -1,7 +1,6 @@
 package plato.controller;
 
-import people.model.Player;
-import plato.model.DotsAndBoxes;
+import plato.model.Player;
 
 
 public class DotsAndBoxesController extends BattleSeaController {

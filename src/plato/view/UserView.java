@@ -1,7 +1,7 @@
-package people.view;
+package plato.view;
 
-import people.model.Player;
-import people.model.User;
+import plato.model.Player;
+import plato.model.User;
 
 public class UserView {
     public String viewAccountMenu() {
@@ -19,7 +19,6 @@ public class UserView {
     public String viewGameStatistics(String gameName) {
         return null;
     }
-
 
     public String showFriends(User user) {
         return null;

@@ -1,6 +1,6 @@
-package people.controller;
+package plato.controller;
 
-import people.model.User;
+import plato.model.User;
 
 public class UserController {
 

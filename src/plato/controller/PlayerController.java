@@ -1,7 +1,7 @@
-package people.controller;
+package plato.controller;
 
-import people.model.Player;
-import people.model.User;
+import plato.model.Player;
+import plato.model.User;
 import plato.model.Event;
 import plato.model.Game;
 

@@ -1,6 +1,6 @@
 package plato.controller;
 
-import people.model.Player;
+import plato.model.Player;
 import plato.model.Direction;
 import plato.model.Ship;
 
@@ -21,7 +21,7 @@ public class BattleSeaController extends GameController{
     }
 
     public void changeCoordinateState(int xPosition, int yPosition){
-
+        //boomed or unboomed
     }
 
     public void boom(int xPosition, int yPosition){

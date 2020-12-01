@@ -1,4 +1,4 @@
-package people.model;
+package plato.model;
 
 public class User {
     private String firstname;
