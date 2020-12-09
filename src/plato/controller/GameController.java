@@ -1,8 +1,11 @@
 package plato.controller;
 
 import plato.model.Game;
+import plato.model.Player;
+import plato.model.User;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class GameController {
@@ -26,5 +29,10 @@ public class GameController {
 
     public void addToFavorite(Game game){
         favoriteGames.add(game.getGameName());
+    }
+
+    HashMap<User, Integer> scoreList = new HashMap<>();
+    public void setScore(User userID, int score){
+        scoreList.put(User.getUserID(userID),score);
     }
 }
