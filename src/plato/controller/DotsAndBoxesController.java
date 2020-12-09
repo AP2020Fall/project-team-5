@@ -9,11 +9,11 @@ public class DotsAndBoxesController extends BattleSeaController {
 
     }
 
-    public void executeGame() {
+    public static void executeGame() {
 
     }
     //Dots
-    public void findAvailableDots(){
+    public void findAvailableDots(){ //check
 
     }
     public void changeTurn(Player player1, Player player2){

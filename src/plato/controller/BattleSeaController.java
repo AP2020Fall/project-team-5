@@ -8,6 +8,10 @@ public class BattleSeaController extends GameController{
     static public void startBattleSea(){
 
     }
+
+    public static void executeGame() {
+    }
+
     public void assignRandomCoordinates(Player player, Ship ship, int xPosition, int yPosition) {
 
     }
