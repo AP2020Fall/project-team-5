@@ -54,7 +54,7 @@ public class User {
         return lastName;
     }
 
-    public String getUserID() {
+    public static User getUserID(User userID) {
         return userID;
     }
 

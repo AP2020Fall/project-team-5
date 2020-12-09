@@ -23,6 +23,7 @@ public class Player extends User {
     }
 
     public int getScore() {
+
         return score;
     }
 

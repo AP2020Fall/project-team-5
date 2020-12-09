@@ -1,12 +1,17 @@
 package plato.controller;
 
+import plato.model.DotsAndBoxes;
 import plato.model.Player;
 
 
-public class DotsAndBoxesController extends BattleSeaController {
+public class DotsAndBoxesController extends DotsAndBoxes {
+
+    public DotsAndBoxesController(String gameID, String gameName) {
+        super(gameID, gameName);
+    }
 
     static public void startDotsAndBoxes(){
-
+        executeGame();
     }
 
     public static void executeGame() {
@@ -42,10 +47,12 @@ public class DotsAndBoxesController extends BattleSeaController {
     public void timeToDrawLine(){
 
     }
-    public void makeBox(){
+    public void makeBox(Player player){
 
     }
-    public void gainScore(){
+
+    public void gainScore(Player player){
+        player.getScore();
 
     }
 
