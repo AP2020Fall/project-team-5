@@ -1,5 +1,6 @@
 package plato.controller;
 
+import plato.model.DotsAndBoxes;
 import plato.model.Game;
 import plato.model.Player;
 import plato.model.User;
@@ -10,25 +11,28 @@ import java.util.HashMap;
 
 public class GameController {
 
-    public void open(String gameName) {
-        if(gameName.equals("Dots And Boxes"))
-            DotsAndBoxesController.startDotsAndBoxes();
-        if(gameName.equals("Battle Sea"))
+    public void open(Game game) {
+        if(game.getGameName().equals("Dots And Boxes")) {
+            DotsAndBoxesController dab_controller = new DotsAndBoxesController(game.getGameID(), game.getGameName());
+            dab_controller.startDotsAndBoxes();
+        }
+        if(game.getGameName().equals("Battle Sea"))
             BattleSeaController.startBattleSea();
 
     }
 
     public String getScoreBoard(){
-        return ScoreBoard;
+        return "socreboard!";
+//        return ScoreBoard;
     }
 
-    public void runGame(Game game){
-        if(game.getGameName().equals("Dots And Boxes"))
-            DotsAndBoxesController.executeGame();
-        if(game.getGameName().equals("Battle Sea"))
-            BattleSeaController.executeGame();
-
-    }
+//    public void runGame(Game game){
+//        if(game.getGameName().equals("Dots And Boxes"))
+//            DotsAndBoxesController.executeGame();
+//        if(game.getGameName().equals("Battle Sea"))
+//            BattleSeaController.executeGame();
+//
+//    }
     ArrayList<String> favoriteGames = new ArrayList<>();
 
     public void addToFavorite(Game game){
