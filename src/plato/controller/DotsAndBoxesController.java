@@ -23,13 +23,30 @@ public class DotsAndBoxesController extends DotsAndBoxes {
         turn = 1;
     }
 
-    public static void startDotsAndBoxes(){
+    public void startDotsAndBoxes(){
         executeGame();
     }
 
-    public static void executeGame() {
+    public void executeGame() {
         while(true){
-
+            //TODO: gets the info for drawing the line
+            int width=0, height=0, direction=0;
+            if(drawLine(width, height, direction)) {
+                int newboxes = newBoxes();
+                if(newboxes==0)
+                    turn = 3 - turn;
+                else{
+                    if(turn==1)
+                        player1_score+=newboxes;
+                    if(turn==2)
+                        player2_score+=newboxes;
+                }
+            }
+            if(endgame()){
+                //TODO: print who won the game
+                //update the scoreboard
+                break;
+            }
         }
 
     }
@@ -37,13 +54,13 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     public void findAvailableDots(){ //check
 
     }
-    public void changeTurn(Player player1, Player player2){
-
-    }
-    public void notChangeTurn(Player player){
-
-
-    }
+//    public void changeTurn(Player player1, Player player2){
+//
+//    }
+//    public void notChangeTurn(Player player){
+//
+//
+//    }
     //Line
     public boolean drawLine(int width, int height, int direction){
         // 0 for direction means right, 1 means bottom
@@ -64,9 +81,9 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     public void saveInformation(){
 
     }
-    public void limitOfCoordinatePlane(){
-
-    }
+//    public void limitOfCoordinatePlane(){
+//
+//    }
     public void possibilityOfDrawLine(){
 
     }
@@ -76,9 +93,28 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     public void timeToDrawLine(){
 
     }
-    public void makeBox(){
-
-
+    public int newBoxes(){
+        int newboxes = 0;
+        for(int width=0; width<WIDTH-1; width++)
+            for(int height=0; height<HEIGHT-1; height++)
+                if( box[width][height] == false &&
+                    rightline[width][height] && rightline[width][height+1] &&
+                    bottomline[width][height] && bottomline[width+1][height]) {
+                    box[width][height] = true;
+                    newboxes++;
+                }
+        return newboxes;
+    }
+    public boolean endgame(){
+        for(int width=0; width<WIDTH-1; width++)
+            for(int height=0; height<HEIGHT; height++)
+                if(rightline[width][height]==false)
+                    return false;
+        for(int width=0; width<WIDTH; width++)
+            for(int height=0; height<HEIGHT-1; height++)
+                if(bottomline[width][height]==false)
+                    return false;
+        return true;
     }
 
     public void gainScore(Player player){
