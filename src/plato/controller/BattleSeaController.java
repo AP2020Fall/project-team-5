@@ -1,10 +1,15 @@
 package plato.controller;
 
+import plato.model.BattleSea;
 import plato.model.Player;
 import plato.model.Direction;
 import plato.model.Ship;
 
-public class BattleSeaController extends GameController{
+public class BattleSeaController extends BattleSea {
+    public BattleSeaController(String gameID, String gameName) {
+        super(gameID, gameName);
+    }
+
     static public void startBattleSea(){
 
     }
