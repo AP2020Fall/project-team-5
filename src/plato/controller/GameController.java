@@ -18,6 +18,10 @@ public class GameController {
 
     }
 
+    public String getScoreBoard(){
+        return ScoreBoard;
+    }
+
     public void runGame(Game game){
         if(game.getGameName().equals("Dots And Boxes"))
             DotsAndBoxesController.executeGame();
