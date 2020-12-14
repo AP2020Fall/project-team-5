@@ -30,14 +30,33 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     }
 
     public void executeGame() {
-        System.out.println("enter the width, height and direction example1:3 5 0   example2:4 6 1");
         Scanner sc = new Scanner(System.in);
+        //draw line between (x,y) and (x,y)
         while(true){
             String[] split = sc.nextLine().split(" ");
-            int width = Integer.parseInt(split[0]);
-            int height = Integer.parseInt(split[1]);
-            int direction = Integer.parseInt(split[3]);
-                                                            //TODO: gets the info for drawing the line
+            String x1_y1 = split[4];
+            String x2_y2 = split[6];
+            String[] x1y1 = x1_y1.split("");
+            String[] x2y2 = x2_y2.split("");
+            int x1 = Integer.parseInt(x1y1[1]);
+            int y1 = Integer.parseInt(x1y1[3]);
+            int x2 = Integer.parseInt(x2y2[1]);
+            int y2 = Integer.parseInt(x2y2[3]);
+
+            int width;
+            int height;
+            int direction;
+
+            if(x1 == x2 + 1 && y1==y2){width = x2; height = y2; direction = 0;}
+            else if(x2 == x1 + 1 && y1==y2){width = x1; height = y1; direction = 0;}
+            else if(x1 == x2 && y1 == y2 + 1){width = x2; height = y2; direction = 1;}
+            else if(x1 == x2 && y2 == y1 + 1){width = x1; height = y1; direction = 1;}
+            else{
+                System.out.println("you can’t draw line between these two dots");
+                break;
+            }
+
+
             if(drawLine(width, height, direction)) {
                 int newboxes = newBoxes();
                 if(newboxes==0)
@@ -61,13 +80,8 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     public void findAvailableDots(){ //check
 
     }
-//    public void changeTurn(Player player1, Player player2){
-//
-//    }
-//    public void notChangeTurn(Player player){
-//
-//
-//    }
+
+
     //Line
     public boolean drawLine(int width, int height, int direction){
         // 0 for direction means right, 1 means bottom
@@ -85,13 +99,14 @@ public class DotsAndBoxesController extends DotsAndBoxes {
         return true;
     }
 
+
+
+
     public void saveInformation(){
 
     }
-//    public void limitOfCoordinatePlane(){
-//
-//    }
-    public void possibilityOfDrawLine(){
+
+    public void availableLines(){
 
     }
     public void players(Player player1, Player player2){

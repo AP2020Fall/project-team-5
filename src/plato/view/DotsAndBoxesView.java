@@ -12,7 +12,8 @@ public class DotsAndBoxesView extends GameView {
 
     }
     //Dots
-    public void showAvailableDots(){
+    public void showAvailableLines(){
+
 
     }
     //Line
