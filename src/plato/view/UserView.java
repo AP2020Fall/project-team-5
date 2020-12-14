@@ -5,7 +5,7 @@ import plato.model.User;
 
 public class UserView {
     public String viewAccountMenu() {
-        return null;
+        return "";
     }
 
     public String viewPlatoStatistics(Player player) {

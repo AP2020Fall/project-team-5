@@ -12,6 +12,9 @@ public class Player extends User {
 
     public Player(String firstname, String lastName, String userName, String password, String email, String phoneNumber) {
         super(firstname, lastName, userName, password, email, phoneNumber);
+        platoAge=0;
+        moneyAmount=0;
+        score=0;
     }
 
     public int getNumberOfdaysSinceRegisteration() {
