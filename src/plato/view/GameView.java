@@ -6,6 +6,7 @@ import plato.model.GameLog;
 public class GameView {
 
     public void showScoreboard(Game game) {
+        System.out.println();
 
     }
 
