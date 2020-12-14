@@ -71,7 +71,7 @@ public class UserController {
     }
 
     public void add(User user) {
-
+        User.getUsers().add(user);
     }
 
     public void accept(User user) {
