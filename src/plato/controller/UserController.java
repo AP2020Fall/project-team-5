@@ -59,8 +59,15 @@ public class UserController {
 
     }
 
-    public void remove(User user) {
-
+    public static void remove(String username) {
+        for(User user : User.getUsers())
+        {
+            if(user.getUsername().equals(username))
+            {
+                User.getUsers().remove(user);
+                break;
+            }
+        }
     }
 
     public void add(User user) {
