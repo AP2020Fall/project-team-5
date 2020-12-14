@@ -29,13 +29,7 @@ public class GameController {
 //        return ScoreBoard;
     }
 
-//    public void runGame(Game game){
-//        if(game.getGameName().equals("Dots And Boxes"))
-//            DotsAndBoxesController.executeGame();
-//        if(game.getGameName().equals("Battle Sea"))
-//            BattleSeaController.executeGame();
-//
-//    }
+
     ArrayList<String> favoriteGames = new ArrayList<>();
 
     public void addToFavorite(Game game){

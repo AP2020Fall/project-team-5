@@ -3,6 +3,8 @@ package plato.controller;
 import plato.model.DotsAndBoxes;
 import plato.model.Player;
 
+import java.util.Scanner;
+
 
 public class DotsAndBoxesController extends DotsAndBoxes {
     static final int WIDTH = 8;
@@ -28,9 +30,14 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     }
 
     public void executeGame() {
+        System.out.println("enter the width, height and direction example1:3 5 0   example2:4 6 1");
+        Scanner sc = new Scanner(System.in);
         while(true){
-            //TODO: gets the info for drawing the line
-            int width=0, height=0, direction=0;
+            String[] split = sc.nextLine().split(" ");
+            int width = Integer.parseInt(split[0]);
+            int height = Integer.parseInt(split[1]);
+            int direction = Integer.parseInt(split[3]);
+                                                            //TODO: gets the info for drawing the line
             if(drawLine(width, height, direction)) {
                 int newboxes = newBoxes();
                 if(newboxes==0)
@@ -116,6 +123,8 @@ public class DotsAndBoxesController extends DotsAndBoxes {
                     return false;
         return true;
     }
+
+
 
     public void gainScore(Player player){
         player.getScore();
