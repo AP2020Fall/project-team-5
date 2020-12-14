@@ -2,6 +2,7 @@ package plato.controller;
 
 import plato.model.DotsAndBoxes;
 import plato.model.Player;
+import plato.view.DotsAndBoxesView;
 
 import java.util.Scanner;
 
@@ -12,7 +13,7 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     static final int RIGHT = 0;
     static final int BOTTOM = 1;
     boolean[][] box;
-    int player1_score, player2_score;
+    public static int player1_score, player2_score;
     int turn;
     boolean[][] rightline;
     boolean[][] bottomline;
@@ -51,10 +52,7 @@ public class DotsAndBoxesController extends DotsAndBoxes {
             else if(x2 == x1 + 1 && y1==y2){width = x1; height = y1; direction = 0;}
             else if(x1 == x2 && y1 == y2 + 1){width = x2; height = y2; direction = 1;}
             else if(x1 == x2 && y2 == y1 + 1){width = x1; height = y1; direction = 1;}
-            else{
-                System.out.println("you can’t draw line between these two dots");
-                break;
-            }
+            else{ System.out.println("you can’t draw line between these two dots");break;}
 
 
             if(drawLine(width, height, direction)) {
@@ -76,6 +74,12 @@ public class DotsAndBoxesController extends DotsAndBoxes {
         }
 
     }
+
+    public void scoreBoard(){
+        System.out.println();
+    }
+
+
     //Dots
     public void findAvailableDots(){ //check
 
