@@ -7,17 +7,20 @@ import plato.model.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 
 public class GameController {
 
 
     public void open(Game game) {
-        if(game.getGameName().equals("Dots And Boxes")) {
+        Scanner sc = new Scanner(System.in);
+        String start = sc.nextLine();
+        if(start.equals("start dot and boxes game")) {
             DotsAndBoxesController dab_controller = new DotsAndBoxesController(game.getGameID(), game.getGameName());
             dab_controller.startDotsAndBoxes();
         }
-        if(game.getGameName().equals("Battle Sea")){
+        if(start.equals("start dot and boxes game")){
             BattleSeaController bs_controller = new BattleSeaController(game.getGameID(), game.getGameName());
             bs_controller.startBattleSea();
 
