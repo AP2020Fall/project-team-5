@@ -61,6 +61,11 @@ public class User {
         return lastName;
     }
 
+    ////// what's this?
+    public static User getUserID(User userID) {
+        return userID;
+    }
+
     public String getUsername() {
         return username;
     }
