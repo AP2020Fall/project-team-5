@@ -23,6 +23,10 @@ public class UserController {
         return true;
     }
 
+    public void add(User user) {
+        User.getUsers().add(user);
+    }
+
     public void logIn(String username,String password) {
 
     }
@@ -56,29 +60,6 @@ public class UserController {
     }
 
     public void login(String username,String password) {
-
-    }
-
-    public static void remove(String username) {
-        for(User user : User.getUsers())
-        {
-            if(user.getUsername().equals(username))
-            {
-                User.getUsers().remove(user);
-                break;
-            }
-        }
-    }
-
-    public void add(User user) {
-        User.getUsers().add(user);
-    }
-
-    public void accept(User user) {
-
-    }
-
-    public void decline(User user) {
 
     }
 }
