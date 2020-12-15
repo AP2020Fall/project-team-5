@@ -5,7 +5,7 @@ import plato.model.User;
 
 public class UserView {
     public String viewAccountMenu() {
-        return null;
+        return "";
     }
 
     public String viewPlatoStatistics(Player player) {
@@ -28,8 +28,16 @@ public class UserView {
         return null;
     }
 
-    public String showFriendsRequest() {
-        return null;
+    public String showFriendsRequest(String playerUsername) {
+        String requests="";
+        for (Player player: Player.getPlayers()) {
+            if (player.getUsername().equals(playerUsername)){
+                for (String username : player.getFriendsRequests()) {
+                    requests+= username+"\n";
+                }
+            }
+        }
+        return requests;
     }
 
 }
