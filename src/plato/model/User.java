@@ -61,10 +61,6 @@ public class User {
         return lastName;
     }
 
-    public static User getUserID(User userID) {
-        return userID;
-    }
-
     public String getUsername() {
         return username;
     }

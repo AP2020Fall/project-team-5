@@ -13,8 +13,9 @@ public class AdminView extends UserView{
         return null;
     }
 
-    public void viewUsers() {
+    public String viewUsers() {
         User.getUsers().sort(Comparator.comparing(o -> o.getUsername()));
+        String users="";
         for(User user : User.getUsers())
         {
             System.out.println(user.getUsername());

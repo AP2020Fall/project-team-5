@@ -28,8 +28,12 @@ public class UserView {
         return null;
     }
 
-    public String showFriendsRequest() {
-        return null;
+    public String showFriendsRequest(String PlayerUsername) {
+        String requests="";
+        for (User user: User.getUsers()) {
+
+        }
+        return requests;
     }
 
 }

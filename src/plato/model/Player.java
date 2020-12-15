@@ -7,8 +7,8 @@ public class Player extends User {
     private double moneyAmount;
     private int score;
     private GameLog gameLog;
-    private ArrayList<Player> friends;
-    private ArrayList<Player> friendsRequests;
+    private ArrayList<String> friends;
+    private ArrayList<String> friendsRequests;
 
     public Player(String firstname, String lastName, String userName, String password, String email, String phoneNumber) {
         super(firstname, lastName, userName, password, email, phoneNumber);
@@ -26,7 +26,6 @@ public class Player extends User {
     }
 
     public int getScore() {
-
         return score;
     }
 
@@ -34,11 +33,11 @@ public class Player extends User {
         return gameLog;
     }
 
-    public ArrayList<Player> getFriends() {
+    public ArrayList<String> getFriends() {
         return friends;
     }
 
-    public ArrayList<Player> getFriendsRequests() {
+    public ArrayList<String> getFriendsRequests() {
         return friendsRequests;
     }
 
