@@ -25,8 +25,8 @@ public class UserView {
         String friends="";
         for(Player player : Player.getPlayers()){
             if (player.getUsername().equals(playerUsername)){
-                for (String username : player.getFriends()) {
-                    friends+= username+"\n";
+                for (Player friend : player.getFriends()) {
+                    friends+= friend.getUsername()+"\n";
                 }
             }
         }
