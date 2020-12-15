@@ -86,6 +86,16 @@ public class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return  "firstname:" + firstname + "\n" +
+                "lastName:'" + lastName + "\n" +
+                "userID='" + userID + "\n" +
+                "username='" + username + "\n" +
+                "email='" + email + "\n" +
+                "phoneNumber='" + phoneNumber ;                ;
+    }
 }
 
 

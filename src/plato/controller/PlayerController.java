@@ -18,10 +18,6 @@ public class PlayerController extends UserController{
 
     }
 
-    public void addFriend(User user) {
-
-    }
-
     public boolean searchFriends(String friendID) {
         return false;
     }

@@ -2,8 +2,6 @@ package plato.view;
 
 import plato.model.User;
 
-import java.util.Comparator;
-
 public class AdminView extends UserView{
     public String viewEvents() {
         return null;

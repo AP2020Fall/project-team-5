@@ -40,7 +40,13 @@ public class UserController {
     }
 
     public void changePassword(String username,String currentPassword, String newPassword) {
-
+        if (checkPassword(username,currentPassword)){
+            for(User user: User.getUsers()){
+                if (user.getUsername().equals(username)){
+                    user.setPassword(newPassword);
+                }
+            }
+        }
     }
 
     public void edit(String username,String password, String field, String newValue) {
@@ -62,4 +68,5 @@ public class UserController {
     public void login(String username,String password) {
 
     }
+
 }

@@ -4,6 +4,7 @@ import plato.model.Player;
 import plato.model.User;
 
 public class UserView {
+
     public String viewAccountMenu() {
         return "";
     }
@@ -20,16 +21,25 @@ public class UserView {
         return null;
     }
 
-    public String showFriends(User user) {
-        return null;
+    public String showFriends(String playerUsername) {
+        String friends="";
+        for(Player player : Player.getPlayers()){
+            if (player.getUsername().equals(playerUsername)){
+                for (String username : player.getFriends()) {
+                    friends+= username+"\n";
+                }
+            }
+        }
+        return friends;
     }
 
-    public String viewUserProfile(User user) {
-        return null;
+    public String viewUserInfo(User user) {
+        return String.valueOf(user);
     }
 
     public String showFriendsRequest(String playerUsername) {
         String requests="";
+        //       or for (User user: User.getUsers()) ?????????
         for (Player player: Player.getPlayers()) {
             if (player.getUsername().equals(playerUsername)){
                 for (String username : player.getFriendsRequests()) {
