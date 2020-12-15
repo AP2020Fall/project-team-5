@@ -30,7 +30,7 @@ public class PlayerController extends UserController{
 
     }
 
-    public void addFriend(Player player, String friendUsername) {
-        player.getFriends().add(friendUsername);
+    public void addFriend(Player player, Player friend) {
+        player.getFriends().add(friend);
     }
 }

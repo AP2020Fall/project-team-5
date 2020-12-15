@@ -3,11 +3,8 @@ package plato.model;
 import java.util.ArrayList;
 
 public class User {
-    public static ArrayList<User> getUsers() {
-        return users;
-    }
 
-    private static ArrayList<User> users= new ArrayList<>();
+    private static ArrayList<User> users = new ArrayList<>();
     private String firstname;
     private String lastName;
     private String userID;
@@ -51,6 +48,10 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public static ArrayList<User> getUsers() {
+        return users;
     }
 
     public String getFirstname() {

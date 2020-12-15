@@ -28,10 +28,14 @@ public class UserView {
         return null;
     }
 
-    public String showFriendsRequest(String PlayerUsername) {
+    public String showFriendsRequest(String playerUsername) {
         String requests="";
-        for (User user: User.getUsers()) {
-
+        for (Player player: Player.getPlayers()) {
+            if (player.getUsername().equals(playerUsername)){
+                for (String username : player.getFriendsRequests()) {
+                    requests+= username+"\n";
+                }
+            }
         }
         return requests;
     }

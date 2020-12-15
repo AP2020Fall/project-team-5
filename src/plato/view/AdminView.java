@@ -14,12 +14,12 @@ public class AdminView extends UserView{
     }
 
     public String viewUsers() {
-        User.getUsers().sort(Comparator.comparing(o -> o.getUsername()));
         String users="";
         for(User user : User.getUsers())
         {
-            System.out.println(user.getUsername());
+            users+=(user.getUsername()+"\n");
         }
+        return users;
     }
 
     public void viewUserProfile(String username) {
