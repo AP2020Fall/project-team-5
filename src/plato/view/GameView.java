@@ -50,7 +50,7 @@ public class GameView {
 
     }
 
-    public String showPoints(Game game) {
-        return null;
+    public void showPoints(Game game) {
+
     }
 }

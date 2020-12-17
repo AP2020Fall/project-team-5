@@ -9,16 +9,16 @@ public class DotsAndBoxesView extends GameView {
 
 
     public void showWhoseTurn(Player player1, Player player2){
+        if(DotsAndBoxesController.turn == 1 )
+            System.out.println("It's" + player1 + "Turn");
+        if (DotsAndBoxesController.turn == 2)
+            System.out.println("It's" + player2 + "Turn");
 
     }
     public void showTable(){
 
     }
-    //Dots
-    public void showAvailableLines(){
 
-
-    }
     //Line
     public void showDrawnLines(){
 

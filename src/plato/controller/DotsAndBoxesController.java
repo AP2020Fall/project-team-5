@@ -4,6 +4,7 @@ import plato.model.DotsAndBoxes;
 import plato.model.Player;
 import plato.view.DotsAndBoxesView;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -13,8 +14,9 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     static final int RIGHT = 0;
     static final int BOTTOM = 1;
     public static int numberofplayedgame=0;
+    public static int turn;
     boolean[][] box;
-    int turn;
+
     boolean[][] rightline;
     boolean[][] bottomline;
 
@@ -123,7 +125,11 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     public void availableLines(){
 
     }
-    public void players(Player player1, Player player2){
+    ArrayList<Player> players = new ArrayList<>();
+    public ArrayList<Player> players(Player player1, Player player2){
+        players.add(player1);
+        players.add(player2);
+        return players;
 
     }
     public void timeToDrawLine(){
