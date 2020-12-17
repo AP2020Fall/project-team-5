@@ -70,7 +70,11 @@ public class DotsAndBoxesController extends DotsAndBoxes {
             if(endgame()){
                 //TODO: print who won the game
                 if(Player.player1_score > Player.player2_score)
-
+                    Player.player1_wins++;
+                if(Player.player2_score > Player.player1_score)
+                    Player.player2_wins++;
+                if(Player.player1_score == Player.player2_score)
+                    Player.numberofequal++;
 
                 //update the scoreboard
                 break;

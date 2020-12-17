@@ -7,6 +7,8 @@ public class Player extends User {
     private int platoAge;
     private double moneyAmount;
     public static int player1_score, player2_score;
+    public static int player1_wins, player2_wins;
+    public static int numberofequal;
     private GameLog gameLog;
     private ArrayList<Player> friends;
     private ArrayList<String> friendsRequests;
@@ -17,6 +19,9 @@ public class Player extends User {
         moneyAmount=0;
         player1_score=0;
         player2_score=0;
+        player1_wins=0;
+        player2_wins=0;
+        numberofequal=0;
 
     }
 
