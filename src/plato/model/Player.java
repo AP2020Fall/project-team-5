@@ -6,7 +6,7 @@ public class Player extends User {
     private static ArrayList<Player> players = new ArrayList<>();
     private int platoAge;
     private double moneyAmount;
-    private int score;
+    public static int player1_score, player2_score;
     private GameLog gameLog;
     private ArrayList<Player> friends;
     private ArrayList<String> friendsRequests;
@@ -15,7 +15,9 @@ public class Player extends User {
         super(firstname, lastName, userName, password, email, phoneNumber);
         platoAge=0;
         moneyAmount=0;
-        score=0;
+        player1_score=0;
+        player2_score=0;
+
     }
 
     public static ArrayList<Player> getPlayers() {
@@ -30,8 +32,11 @@ public class Player extends User {
         return moneyAmount;
     }
 
-    public int getScore() {
-        return score;
+    public static int getScorePlayer1(Player player1) {
+        return player1_score;
+    }
+    public static int getScorePlayer2(Player player2){
+        return player2_score;
     }
 
     public GameLog getGameLog() {
