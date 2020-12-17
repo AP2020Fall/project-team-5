@@ -12,11 +12,13 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     static final int HEIGHT = 8;
     static final int RIGHT = 0;
     static final int BOTTOM = 1;
+    public static int numberofplayedgame=0;
     boolean[][] box;
     public static int player1_score, player2_score;
     int turn;
     boolean[][] rightline;
     boolean[][] bottomline;
+
 
     public DotsAndBoxesController(String gameID, String gameName) {
         super(gameID, gameName);
@@ -71,6 +73,8 @@ public class DotsAndBoxesController extends DotsAndBoxes {
                 //update the scoreboard
                 break;
             }
+            numberofplayedgame++;
+
         }
 
     }

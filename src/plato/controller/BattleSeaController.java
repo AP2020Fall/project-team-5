@@ -6,6 +6,8 @@ import plato.model.Direction;
 import plato.model.Ship;
 
 public class BattleSeaController extends BattleSea {
+    public static int numberofplayedgame=0;
+
     public BattleSeaController(String gameID, String gameName) {
         super(gameID, gameName);
     }
