@@ -14,7 +14,6 @@ public class DotsAndBoxesController extends DotsAndBoxes {
     static final int BOTTOM = 1;
     public static int numberofplayedgame=0;
     boolean[][] box;
-    public static int player1_score, player2_score;
     int turn;
     boolean[][] rightline;
     boolean[][] bottomline;
@@ -63,13 +62,16 @@ public class DotsAndBoxesController extends DotsAndBoxes {
                     turn = 3 - turn;
                 else{
                     if(turn==1)
-                        player1_score+=newboxes;
+                        Player.player1_score+=newboxes;
                     if(turn==2)
-                        player2_score+=newboxes;
+                        Player.player2_score+=newboxes;
                 }
             }
             if(endgame()){
                 //TODO: print who won the game
+                if(Player.player1_score > Player.player2_score)
+
+
                 //update the scoreboard
                 break;
             }
@@ -145,13 +147,6 @@ public class DotsAndBoxesController extends DotsAndBoxes {
                 if(bottomline[width][height]==false)
                     return false;
         return true;
-    }
-
-
-
-    public void gainScore(Player player){
-        player.getScore();
-
     }
 
 }
