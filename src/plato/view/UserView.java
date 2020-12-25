@@ -32,7 +32,19 @@ public class UserView {
     }
 
     public String viewUserProfile(User user) {
-        return null;
+        System.out.println("Username: " + user.getUsername() +
+                "\nFirst Name: " + user.getFirstname() +
+                "\nLast Name: " + user.getLastName() +
+                "\nEmail: " + user.getEmail() +
+                "\nUserID: " + user.getUserID() +
+                "\nPhone Number: " + user.getPhoneNumber()
+        );
+        return "Username: " + user.getUsername() +
+                "\nFirst Name: " + user.getFirstname() +
+                "\nLast Name: " + user.getLastName() +
+                "\nEmail: " + user.getEmail() +
+                "\nUserID: " + user.getUserID() +
+                "\nPhone Number: " + user.getPhoneNumber();
     }
 
     public String showFriendsRequest(String playerUsername) {
