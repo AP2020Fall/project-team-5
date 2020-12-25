@@ -21,7 +21,14 @@ public class UserView {
     }
 
     public String showFriends(User user) {
-        return null;
+        Player player = (Player) user;
+        StringBuilder list = new StringBuilder();
+        for(Player p : player.getFriends())
+        {
+            System.out.println(p.getUsername());
+            list.append(p.getUsername()).append("\n");
+        }
+        return list.toString();
     }
 
     public String viewUserProfile(User user) {

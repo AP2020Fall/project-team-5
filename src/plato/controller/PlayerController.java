@@ -6,6 +6,8 @@ import plato.model.Event;
 import plato.model.Game;
 
 public class PlayerController extends UserController{
+//    private Player player;
+
     public void participateInEvent(Event event) {
 
     }
@@ -35,11 +37,7 @@ public class PlayerController extends UserController{
     }
 
     public void removeFriend(Player player, String friendUsername) {
-        for (Player friend: player.getFriends()) {
-            if (friend.getUsername().equals(friendUsername)){
-                player.getFriends().remove(friend);
-            }
-        }
+        player.getFriends().removeIf(friend -> friend.getUsername().equals(friendUsername));
     }
 
     public void accept(Player player, Player friend) {
@@ -53,10 +51,6 @@ public class PlayerController extends UserController{
     }
 
     public void decline(Player player, Player friend) {
-        for (String username: player.getFriendsRequests()) {
-            if (friend.getUsername().equals(username)){
-                player.getFriendsRequests().remove(username);
-            }
-        }
+        player.getFriendsRequests().removeIf(username -> friend.getUsername().equals(username));
     }
 }

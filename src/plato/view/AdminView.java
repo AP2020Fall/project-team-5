@@ -23,6 +23,26 @@ public class AdminView extends UserView{
     }
 
     public void viewUserProfile(String username) {
-
+        User user = null;
+        for(User u : User.getUsers())
+        {
+            if(u.getUsername().equals(username))
+            {
+                user = u;
+                break;
+            }
+        }
+        if(user == null)
+        {
+            System.out.println("User not found.");
+            return;
+        }
+        System.out.println("Username: " + user.getUsername() +
+                        "\nFirst Name: " + user.getFirstname() +
+                        "\nLast Name: " + user.getLastName() +
+                        "\nEmail: " + user.getEmail() +
+                        "\nUserID: " + user.getUserID() +
+                        "\nPhone Number: " + user.getPhoneNumber()
+        );
     }
 }
