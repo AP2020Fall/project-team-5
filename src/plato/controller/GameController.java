@@ -16,11 +16,11 @@ public class GameController {
     public void open(Game game) {
         Scanner sc = new Scanner(System.in);
         String start = sc.nextLine();
-        if(start.equals("start dot and boxes game")) {
+        if(start.equals("start dots and boxes game")) {
             DotsAndBoxesController dab_controller = new DotsAndBoxesController(game.getGameID(), game.getGameName());
             dab_controller.startDotsAndBoxes();
         }
-        if(start.equals("start dot and boxes game")){
+        if(start.equals("start dots and boxes game")){
             BattleSeaController bs_controller = new BattleSeaController(game.getGameID(), game.getGameName());
             bs_controller.startBattleSea();
 
