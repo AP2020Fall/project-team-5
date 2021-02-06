@@ -16,7 +16,7 @@ public class DotsAndBoxesView extends GameView {
 
     }
     public void showTable(){
-
+        System.out.println("showing table");
     }
 
 
