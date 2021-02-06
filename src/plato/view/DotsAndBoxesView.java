@@ -19,7 +19,7 @@ public class DotsAndBoxesView extends GameView {
 
     }
 
-    //Line
+
     public void showDrawnLines(){
 
     }
