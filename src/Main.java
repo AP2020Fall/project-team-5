@@ -107,7 +107,7 @@ public class Main {
                 return;
             }else if(nextline.equals("2")){
                 BattleSeaController controller = new BattleSeaController(player1, player2);
-
+                controller.startBattleSea(input);
                 return;
             }
 
