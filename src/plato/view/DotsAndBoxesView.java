@@ -3,7 +3,6 @@ package plato.view;
 import plato.controller.DotsAndBoxesController;
 import plato.model.Player;
 
-
 public class DotsAndBoxesView extends GameView {
 
 
