@@ -1,7 +1,10 @@
 package plato.view;
 
+import plato.controller.BattleSeaController;
+import plato.controller.DotsAndBoxesController;
 import plato.model.Game;
 import plato.model.GameLog;
+import plato.model.Player;
 
 public class GameView {
 
@@ -31,15 +34,23 @@ public class GameView {
         System.out.println("Game Score:" + game.getGameScore());
     }
 
-    public String showWinsCount(Game game) {
-        return null;
+    public void showWinsCount(Game game) {
+//        if(game.getGameName().equals("Dots And Boxes"))
+//            System.out.println(Player.player1_wins + Player.player2_wins);
+//        if(game.getGameName().equals("Battle Sea")){
+//            //TODO: for Battle sea do the same way.
+//            }
     }
 
-    public String showPlayedCount(Game game) {
-        return null;
+    public void showPlayedCount(Game game) {
+        if(game.getGameName().equals("Dots And Boxes"))
+            System.out.println(DotsAndBoxesController.numberofplayedgame);
+        if (game.getGameName().equals("Battle Sea"))
+            System.out.println(BattleSeaController.numberofplayedgame);
+
     }
 
-    public String showPoints(Game game) {
-        return null;
+    public void showPoints(Game game) {
+
     }
 }

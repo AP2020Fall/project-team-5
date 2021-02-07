@@ -26,33 +26,33 @@ public class PlayerController extends UserController{
 
     }
 
-    public void addFriend(Player player, Player friend) {
-        friend.getFriendsRequests().add(player.getUsername());
-    }
+//    public void addFriend(Player player, Player friend) {
+//        friend.getFriendsRequests().add(player.getUsername());
+//    }
 
     public void removeFriend(Player player, String friendUsername) {
         for (Player friend: player.getFriends()) {
-            if (friend.getUsername().equals(friendUsername)){
-                player.getFriends().remove(friend);
-            }
+//            if (friend.getUsername().equals(friendUsername)){
+//                player.getFriends().remove(friend);
+//            }
         }
     }
 
     public void accept(Player player, Player friend) {
         for (String username: player.getFriendsRequests()) {
-            if (friend.getUsername().equals(username)){
-                player.getFriends().add(friend);
-                player.getFriendsRequests().remove(username);
-                friend.getFriends().add(player);
-            }
+//            if (friend.getUsername().equals(username)){
+//                player.getFriends().add(friend);
+//                player.getFriendsRequests().remove(username);
+//                friend.getFriends().add(player);
+//            }
         }
     }
 
     public void decline(Player player, Player friend) {
         for (String username: player.getFriendsRequests()) {
-            if (friend.getUsername().equals(username)){
-                player.getFriendsRequests().remove(username);
-            }
+//            if (friend.getUsername().equals(username)){
+//                player.getFriendsRequests().remove(username);
+//            }
         }
     }
 }

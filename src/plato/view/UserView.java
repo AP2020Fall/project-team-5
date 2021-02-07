@@ -41,11 +41,11 @@ public class UserView {
         String requests="";
         //       or for (User user: User.getUsers()) ?????????
         for (Player player: Player.getPlayers()) {
-            if (player.getUsername().equals(playerUsername)){
-                for (String username : player.getFriendsRequests()) {
-                    requests+= username+"\n";
-                }
-            }
+//            if (player.getUsername().equals(playerUsername)){
+//                for (String username : player.getFriendsRequests()) {
+//                    requests+= username+"\n";
+//                }
+//            }
         }
         return requests;
     }

@@ -2,20 +2,28 @@ package plato.model;
 
 import java.util.ArrayList;
 
-public class Player extends User {
+public class Player{
     private static ArrayList<Player> players = new ArrayList<>();
+    private String firstname;
     private int platoAge;
     private double moneyAmount;
-    private int score;
+    public int player_wins, player_loses, player_draws;
     private GameLog gameLog;
     private ArrayList<Player> friends;
     private ArrayList<String> friendsRequests;
 
-    public Player(String firstname, String lastName, String userName, String password, String email, String phoneNumber) {
-        super(firstname, lastName, userName, password, email, phoneNumber);
+    public Player(String firstname) {
+        this.firstname = firstname;
+        players.add(this);
         platoAge=0;
         moneyAmount=0;
-        score=0;
+
+    }
+    public String getName(){
+        return firstname;
+    }
+    public static void remove(Player player){
+        players.remove(player);
     }
 
     public static ArrayList<Player> getPlayers() {
@@ -28,10 +36,6 @@ public class Player extends User {
 
     public double getMoneyAmount() {
         return moneyAmount;
-    }
-
-    public int getScore() {
-        return score;
     }
 
     public GameLog getGameLog() {
