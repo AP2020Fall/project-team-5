@@ -50,12 +50,76 @@ public class BattleSeaController{
             else
                 System.out.println("it's "+player2.getName()+" turn");
             String split[] = sc.nextLine().split(" ");
-
+            if(split[0].equals("boom")){
+                int x = Integer.parseInt(split[1]);
+                int y = Integer.parseInt(split[2]);
+                hit(x,y);
+            }
+            if(split[0].equals("show"))
+                if(split[1].equals("boomed")) {
+                    if (turn == 1)
+                        show_hitmap(player_1_hit_map, player_2_field);
+                    else
+                        show_hitmap(player_2_hit_map, player_1_field);
+                }else if(split[1].equals("score")){
+                    System.out.println("------------------");
+                    System.out.println("Player "+player1.getName()+" have "+points[0]+" successful hit");
+                    System.out.println((total-points[0])+" remained to be hit");
+                    System.out.println("------------------");
+                    System.out.println("Player "+player2.getName()+" have "+points[1]+" successful hit");
+                    System.out.println((total-points[1])+" remained to be hit");
+                    System.out.println("------------------");
+                }
+            if(check_win())
+                return;
         }
 
     }
 
-    public void place_ships(int turn_to_place, Scanner sc){
+    private boolean check_win(){
+        if(points[0] == total){
+            player1.player_wins++;
+            player2.player_loses++;
+            System.out.println("Player "+player1.getName()+" wins!");
+            return true;
+        }
+        if(points[1] == total){
+            player2.player_wins++;
+            player1.player_loses++;
+            System.out.println("Player "+player2.getName()+" wins!");
+            return true;
+        }
+        return false;
+    }
+
+    private void hit(int x, int y){
+        if(turn==1) {
+            if (player_1_hit_map[x][y])
+                System.out.println("you already hit that location");
+            else {
+                player_1_hit_map[x][y] = true;
+                if (player_2_field[x][y])
+                    {System.out.println("You hit!!!\nboom again!");points[0]++;}
+                else
+                    {System.out.println("You missed :(");turn = 2;}
+                show_hitmap(player_1_hit_map, player_2_field);
+
+            }
+        }else{
+            if (player_2_hit_map[x][y])
+                System.out.println("you already hit that location");
+            else {
+                player_2_hit_map[x][y] = true;
+                if (player_1_field[x][y])
+                    {System.out.println("You hit!!!\nboom again!");points[1]++;}
+                else
+                    {System.out.println("You missed :(");turn = 1;}
+                show_hitmap(player_2_hit_map, player_1_field);
+            }
+        }
+    }
+
+    private void place_ships(int turn_to_place, Scanner sc){
         System.out.println("Player " + (turn_to_place==0?player1.getName():player2.getName()) + " chose ships to be placed in the field");
         for (int ship : ships_size) {
             while (true) {
@@ -65,7 +129,7 @@ public class BattleSeaController{
                 int y = Integer.parseInt(split[1]);
                 boolean vertical = split[2].equals("vertical");
                 if (!vertical) {
-                    if (x + ship < WIDTH && x >= 0 && y < HEIGHT && y >= 0) {
+                    if (x + ship <= WIDTH && x >= 0 && y < HEIGHT && y >= 0) {
                         for (int i = 0; i < ship; i++)
                             if (turn_to_place == 0)
                                 player_1_field[x + i][y] = true;
@@ -76,7 +140,7 @@ public class BattleSeaController{
                     }
                 }
                 else
-                    if (x < WIDTH && x >= 0 && y + ship < HEIGHT && y >= 0) {
+                    if (x < WIDTH && x >= 0 && y + ship <= HEIGHT && y >= 0) {
                         for (int i = 0; i < ship; i++)
                             if(turn_to_place==0)
                                 player_1_field[x][y + i] = true;
