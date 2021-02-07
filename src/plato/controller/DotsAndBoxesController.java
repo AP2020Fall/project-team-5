@@ -10,8 +10,6 @@ import java.util.Scanner;
 public class DotsAndBoxesController{
     static final int WIDTH = 3;
     static final int HEIGHT = 3;
-    static final int RIGHT = 0;
-    static final int BOTTOM = 1;
     public static int numberofplayedgame=0;
     public static int turn;
     boolean[][] box;
@@ -19,7 +17,6 @@ public class DotsAndBoxesController{
     boolean[][] rightline;
     boolean[][] bottomline;
     private Player player1, player2;
-    private Scanner sc;
 
     private int[] points = {0,0};
 
