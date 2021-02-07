@@ -35,11 +35,11 @@ public class GameView {
     }
 
     public void showWinsCount(Game game) {
-        if(game.getGameName().equals("Dots And Boxes"))
-            System.out.println(Player.player1_wins + Player.player2_wins);
-        if(game.getGameName().equals("Battle Sea")){
-            //TODO: for Battle sea do the same way.
-            }
+//        if(game.getGameName().equals("Dots And Boxes"))
+//            System.out.println(Player.player1_wins + Player.player2_wins);
+//        if(game.getGameName().equals("Battle Sea")){
+//            //TODO: for Battle sea do the same way.
+//            }
     }
 
     public void showPlayedCount(Game game) {

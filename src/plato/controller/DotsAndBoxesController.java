@@ -94,6 +94,10 @@ public class DotsAndBoxesController{
                     System.out.println("There are "+availableLines()+" available line(s) to draw. Use 'show table' to see.");
                 else if(split[1].equals("table"))
                     showTable();
+                else if(split[1].equals("score")){
+                    System.out.println("Player "+player1.getName()+" score is "+points[0]);
+                    System.out.println("Player "+player2.getName()+" score is "+points[1]);
+                }
 
 
         }
