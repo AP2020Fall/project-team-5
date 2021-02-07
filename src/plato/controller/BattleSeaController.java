@@ -5,11 +5,11 @@ import plato.model.Player;
 import plato.model.Direction;
 import plato.model.Ship;
 
-public class BattleSeaController extends BattleSea {
+public class BattleSeaController{
     public static int numberofplayedgame=0;
 
-    public BattleSeaController(String gameID, String gameName) {
-        super(gameID, gameName);
+    public BattleSeaController(Player player1, Player player2) {
+
     }
 
     static public void startBattleSea(){
