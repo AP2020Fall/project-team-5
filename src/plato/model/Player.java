@@ -7,9 +7,7 @@ public class Player{
     private String firstname;
     private int platoAge;
     private double moneyAmount;
-    public static int player1_score, player2_score;
-    public static int player1_wins, player2_wins;
-    public static int numberofequal;
+    public int player_wins, player_loses, player_draws;
     private GameLog gameLog;
     private ArrayList<Player> friends;
     private ArrayList<String> friendsRequests;
@@ -19,11 +17,6 @@ public class Player{
         players.add(this);
         platoAge=0;
         moneyAmount=0;
-        player1_score=0;
-        player2_score=0;
-        player1_wins=0;
-        player2_wins=0;
-        numberofequal=0;
 
     }
     public String getName(){
@@ -43,13 +36,6 @@ public class Player{
 
     public double getMoneyAmount() {
         return moneyAmount;
-    }
-
-    public static int getScorePlayer1(Player player1) {
-        return player1_score;
-    }
-    public static int getScorePlayer2(Player player2){
-        return player2_score;
     }
 
     public GameLog getGameLog() {

@@ -21,6 +21,8 @@ public class DotsAndBoxesController{
     private Player player1, player2;
     private Scanner sc;
 
+    private int[] points = {0,0};
+
 
     public DotsAndBoxesController(Player player1, Player player2) {
         this.player1 = player1;
@@ -72,8 +74,16 @@ public class DotsAndBoxesController{
             }
             if(split[0].equals("end")){
                 if(didmove){
+                    int new_boxes = newBoxes();
+                    points[turn-1]+=new_boxes;
+                    if(new_boxes>0)
+                        System.out.println(new_boxes+" new boxes are made");
                     turn = 3 - turn;
                     didmove=false;
+                    if(availableLines()==0) {
+                        endgame();
+                        return;
+                    }
                 }else{
                     System.out.println("you have not made a move");
                 }
@@ -81,22 +91,10 @@ public class DotsAndBoxesController{
             }
             if(split[0].equals("show"))
                 if(split[1].equals("available"))
-                    availableLines();
+                    System.out.println("There are "+availableLines()+" available line(s) to draw. Use 'show table' to see.");
                 else if(split[1].equals("table"))
                     showTable();
-            if(endgame()){
-                //TODO: print who won the game
-                if(Player.player1_score > Player.player2_score)
-                    Player.player1_wins++;
-                if(Player.player2_score > Player.player1_score)
-                    Player.player2_wins++;
-                if(Player.player1_score == Player.player2_score)
-                    Player.numberofequal++;
 
-                //update the scoreboard
-                break;
-            }
-            numberofplayedgame++;
 
         }
 
@@ -104,12 +102,6 @@ public class DotsAndBoxesController{
 
     public void scoreBoard(){
         System.out.println();
-    }
-
-
-    //Dots
-    public void findAvailableDots(){ //check
-
     }
 
     //Line
@@ -129,15 +121,22 @@ public class DotsAndBoxesController{
         return false;
     }
 
-
-
-
     public void saveInformation(){
 
     }
 
-    public void availableLines(){
+    public int availableLines() {
+        int ans = 0;
+        for (int height = 0; height < HEIGHT; height++)
+            for (int width = 0; width < WIDTH - 1; width++)
+                if (!rightline[width][height])
+                    ans++;
 
+        for (int height = 0; height < HEIGHT - 1; height++)
+            for (int width = 0; width < WIDTH; width++)
+                if (!bottomline[width][height])
+                    ans++;
+        return ans;
     }
     public void showTable(){
         for (int height = 0; height < HEIGHT; height++) {
@@ -150,7 +149,7 @@ public class DotsAndBoxesController{
             }
             System.out.println(".");
             if(height!=HEIGHT-1) {
-                for(int width=0; width<WIDTH-1; width++) {
+                for(int width=0; width<WIDTH; width++) {
                     if (bottomline[width][height])
                         System.out.print("| ");
                     else
@@ -181,16 +180,25 @@ public class DotsAndBoxesController{
                 }
         return newboxes;
     }
-    public boolean endgame(){
-        for(int width=0; width<WIDTH-1; width++)
-            for(int height=0; height<HEIGHT; height++)
-                if(rightline[width][height]==false)
-                    return false;
-        for(int width=0; width<WIDTH; width++)
-            for(int height=0; height<HEIGHT-1; height++)
-                if(bottomline[width][height]==false)
-                    return false;
-        return true;
+    public void endgame(){
+        System.out.println("Game ended");
+        if(points[0] > points[1]) {
+            System.out.println("the winner is "+player1.getName());
+            player1.player_wins++;
+            player2.player_loses++;
+        }
+        if(points[0] < points[1]) {
+            System.out.println("the winner is "+player2.getName());
+            player1.player_loses++;
+            player2.player_wins++;
+        }
+        if(points[0] == points[1]) {
+            System.out.println("game is draw!");
+            player1.player_draws++;
+            player2.player_draws++;
+        }
+        return;
+
     }
 
 }

@@ -104,8 +104,11 @@ public class Main {
             if (nextline.equals("1")){
                 DotsAndBoxesController controller = new DotsAndBoxesController(player1, player2);
                 controller.startDotsAndBoxes(input);
+                return;
             }else if(nextline.equals("2")){
                 BattleSeaController controller = new BattleSeaController(player1, player2);
+
+                return;
             }
 
 
