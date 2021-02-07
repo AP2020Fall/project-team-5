@@ -31,11 +31,11 @@ public class UserView {
     public String showFriendsRequest(String playerUsername) {
         String requests="";
         for (Player player: Player.getPlayers()) {
-            if (player.getUsername().equals(playerUsername)){
-                for (String username : player.getFriendsRequests()) {
-                    requests+= username+"\n";
-                }
-            }
+//            if (player.getUsername().equals(playerUsername)){
+//                for (String username : player.getFriendsRequests()) {
+//                    requests+= username+"\n";
+//                }
+//            }
         }
         return requests;
     }

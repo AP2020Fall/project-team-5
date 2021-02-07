@@ -21,7 +21,7 @@ public class Main {
                 if(Player.getPlayers().size()>1)
                     startGame(input);
                 else
-                    System.out.println("Not enough players, please create users");
+                    System.out.println("Not enough players, please create at least two users");
             }else if(nextline.equals("3")){
                 return;
             }else{
@@ -33,9 +33,9 @@ public class Main {
     public static void manageUsers(Scanner input){
         while(true) {
             System.out.println("\nenter number for one of this commands:\n" +
-                    "1.create a new user" +
-                    "2.delete a user" +
-                    "3.list all users" +
+                    "1.create a new user\n" +
+                    "2.delete a user\n" +
+                    "3.list all users\n" +
                     "4.back to main menu");
             String nextline = input.nextLine();
             if (nextline.equals("1")){
@@ -65,7 +65,7 @@ public class Main {
         }
     }
     public static void startGame(Scanner input){
-        System.out.println("chose a user of player 1");
+        System.out.println("chose a user for player 1");
         Player player1;
         while(true){
             ArrayList<Player> players = Player.getPlayers();
@@ -80,7 +80,7 @@ public class Main {
                 break;
             }
         }
-        System.out.println("chose a user of player 2");
+        System.out.println("chose a user for player 2");
         Player player2;
         while(true){
             ArrayList<Player> players = Player.getPlayers();
@@ -98,12 +98,12 @@ public class Main {
 
         while(true) {
             System.out.println("enter number for the game:\n" +
-                    "1.Dots and Boxes" +
+                    "1.Dots and Boxes\n" +
                     "2.Battle Sea");
                     String nextline = input.nextLine();
             if (nextline.equals("1")){
                 DotsAndBoxesController controller = new DotsAndBoxesController(player1, player2);
-                controller.startDotsAndBoxes();
+                controller.startDotsAndBoxes(input);
             }else if(nextline.equals("2")){
                 BattleSeaController controller = new BattleSeaController(player1, player2);
             }

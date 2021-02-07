@@ -18,64 +18,72 @@ public class DotsAndBoxesController{
 
     boolean[][] rightline;
     boolean[][] bottomline;
+    private Player player1, player2;
+    private Scanner sc;
+
 
     public DotsAndBoxesController(Player player1, Player player2) {
-
+        this.player1 = player1;
+        this.player2 = player2;
         box = new boolean[WIDTH-1][HEIGHT-1];
         rightline = new boolean[WIDTH-1][HEIGHT];
         bottomline = new boolean[WIDTH][HEIGHT-1];
         turn = 1;
     }
 
-    public void startDotsAndBoxes(){
-        executeGame();
+    public void startDotsAndBoxes(Scanner sc){
+        executeGame(sc);
     }
 
-    public void executeGame() {
-        Scanner sc = new Scanner(System.in);
+    public void executeGame(Scanner sc) {
 
-        System.out.println("a new dots and lines game started!\nrun of one these commands:\n" +
+        System.out.println("a new dots and lines game started between "+player1.getName()+" and "+player2.getName()+"!\nrun of one these commands:\n" +
                 "draw line between (x,y) and (x,y)\n" +
                 "end my turn\n" +
                 "show available lines\n" +
-                "show table\n");
+                "show table");
         //draw line between (x,y) and (x,y)
+        boolean didmove = false;
         while(true){
+            if(turn==1)
+                System.out.println("it's "+player1.getName()+" turn");
+            else
+                System.out.println("it's "+player2.getName()+" turn");
             String[] split = sc.nextLine().split(" ");
             if(split[0].equals("draw")) {
-                String x1_y1 = split[3].substring(1,-2);
-                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>");
-                System.out.println(x1_y1);
-                String x2_y2 = split[5].substring(1,-2);
+//                if(didmove){
+//                    System.out.println("you already made a move, end your turn please.");
+//                    continue;
+//                }
+
+                String x1_y1 = split[3].substring(1,split[3].length()-1);
+                String x2_y2 = split[5].substring(1,split[5].length()-1);
                 String[] x1y1 = x1_y1.split(",");
                 String[] x2y2 = x2_y2.split(",");
                 int x1 = Integer.parseInt(x1y1[0]);
                 int y1 = Integer.parseInt(x1y1[1]);
                 int x2 = Integer.parseInt(x2y2[0]);
                 int y2 = Integer.parseInt(x2y2[1]);
-                drawLine(x1,y1,x2,y2);
+                if(drawLine(x1,y1,x2,y2)){
+                    didmove=true;
+                }else{
+                    System.out.println("you cannot draw a line between those two points");
+                }
             }
             if(split[0].equals("end")){
-                //TODO: make sure they moved and only once
-                turn = 3 - turn;
+                if(didmove){
+                    turn = 3 - turn;
+                    didmove=false;
+                }else{
+                    System.out.println("you have not made a move");
+                }
+
             }
             if(split[0].equals("show"))
-                if(split[1].equals(""))
+                if(split[1].equals("available"))
                     availableLines();
-                else if(split[1].equals(""))
+                else if(split[1].equals("table"))
                     showTable();
-
-//            if(drawLine(width, height, direction)) {
-//                int newboxes = newBoxes();
-//                if(newboxes==0)
-//                    turn = 3 - turn;
-//                else{
-//                    if(turn==1)
-//                        Player.player1_score+=newboxes;
-//                    if(turn==2)
-//                        Player.player2_score+=newboxes;
-//                }
-//            }
             if(endgame()){
                 //TODO: print who won the game
                 if(Player.player1_score > Player.player2_score)
@@ -109,12 +117,13 @@ public class DotsAndBoxesController{
         if(x1 <0 || x2<0 || y1<0 || y2<0) return false;
         if(x1>=WIDTH || x2>=WIDTH || y1>=HEIGHT || y2>=HEIGHT) return false;
         if(x2<x1){int swap=x1; x1=x2; x2=swap;}
-        if(y2<y1){int swap=y1; y1=x2; y2=swap;}
-        if(x1==x2 && y2==y1+1 && !rightline[x1][y1]) {
-            rightline[x1][y1] = true;
-        }
-        else if (y1==y2 && x2==x1+1 && !bottomline[x1][y1]) {
+        if(y2<y1){int swap=y1; y1=y2; y2=swap;}
+        if(x1==x2 && y2==y1+1 && !bottomline[x1][y1]) {
             bottomline[x1][y1] = true;
+            return true;
+        }
+        else if (y1==y2 && x2==x1+1 && !rightline[x1][y1]) {
+            rightline[x1][y1] = true;
             return true;
         }
         return false;
@@ -131,7 +140,25 @@ public class DotsAndBoxesController{
 
     }
     public void showTable(){
-
+        for (int height = 0; height < HEIGHT; height++) {
+            for(int width=0; width<WIDTH-1; width++) {
+                System.out.print(".");
+                if (rightline[width][height])
+                    System.out.print("_");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println(".");
+            if(height!=HEIGHT-1) {
+                for(int width=0; width<WIDTH-1; width++) {
+                    if (bottomline[width][height])
+                        System.out.print("| ");
+                    else
+                        System.out.print("  ");
+                }
+                System.out.println();
+            }
+        }
     }
     ArrayList<Player> players = new ArrayList<>();
     public ArrayList<Player> players(Player player1, Player player2){

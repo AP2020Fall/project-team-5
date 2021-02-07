@@ -17,12 +17,12 @@ public class GameController {
         Scanner sc = new Scanner(System.in);
         String start = sc.nextLine();
         if(start.equals("start dot and boxes game")) {
-            DotsAndBoxesController dab_controller = new DotsAndBoxesController(game.getGameID(), game.getGameName());
-            dab_controller.startDotsAndBoxes();
+//            DotsAndBoxesController dab_controller = new DotsAndBoxesController(game.getGameID(), game.getGameName());
+//            dab_controller.startDotsAndBoxes();
         }
         if(start.equals("start dot and boxes game")){
-            BattleSeaController bs_controller = new BattleSeaController(game.getGameID(), game.getGameName());
-            bs_controller.startBattleSea();
+//            BattleSeaController bs_controller = new BattleSeaController(game.getGameID(), game.getGameName());
+//            bs_controller.startBattleSea();
 
         }
     }
