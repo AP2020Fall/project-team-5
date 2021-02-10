@@ -1,56 +1,51 @@
 package plato.view;
-
-import plato.controller.BattleSeaController;
-import plato.controller.DotsAndBoxesController;
-import plato.model.Game;
-import plato.model.GameLog;
-import plato.model.Player;
-
-public class GameView {
-
-    public void showScoreboard(Game game) {
-        System.out.println();
-
-    }
-
-    public void details(Game game) {
-        if (game.getGameName().equals("Dots And Boxes"))
-            System.out.println("Take more boxes than your opponent." +
-                    " You move by connecting two dots with a line." +
-                    " When you place the last 'wall' of a single square (box), the box is yours." +
-                    " The players move in turn, but whenever a player takes a box (s)he must move again.");
-        if (game.getGameName().equals("Battle Sea"))
-            System.out.println("Battle Sea is a strategy type guessing game for two players." +
-                    " It is played on ruled grids on which each player's fleet of ships  are marked." +
-                    " The locations of the fleets are concealed from the other player." +
-                    " Players alternate turns calling shots at the other player's ships," +
-                    " and the objective of the game is to destroy the opposing player's fleet.");
-    }
-
-    public void showLog(GameLog game) {
-        System.out.println("Number Of Playing:" + game.getNumberOfPlaying());
-        System.out.println("Number Of Wins:" + game.getNumberOfWins());
-        System.out.println("Log ID:" + game.getLogID());
-        System.out.println("Game Score:" + game.getGameScore());
-    }
-
-    public void showWinsCount(Game game) {
-//        if(game.getGameName().equals("Dots And Boxes"))
-//            System.out.println(Player.player1_wins + Player.player2_wins);
-//        if(game.getGameName().equals("Battle Sea")){
-//            //TODO: for Battle sea do the same way.
+//import javafx.application.Application;
+//import javafx.scene.Group;
+//import javafx.scene.Scene;
+//import javafx.scene.canvas.Canvas;
+//import javafx.scene.canvas.GraphicsContext;
+//import javafx.scene.paint.Color;
+//import javafx.scene.shape.ArcType;
+//import javafx.stage.Stage;
+//
+//public class GameView extends Application {
+//
+//    public static void main(String[] args) {
+//        launch(args);
+//    }
+//
+//    @Override
+//    public void start(Stage primaryStage, Controller controller) {
+//        primaryStage.setTitle("Dots and Boxes");
+//        Group root = new Group();
+//        Canvas canvas = new Canvas(800, 800);
+//        GraphicsContext gc = canvas.getGraphicsContext2D();
+//        drawShapes(gc, controller);
+//        root.getChildren().add(canvas);
+//        primaryStage.setScene(new Scene(root));
+//        primaryStage.show();
+//    }
+//
+//    private void drawTheBoard(GraphicsContext gc, Controller controller) {
+//        for (int height = 0; height < controller.HEIGHT; height++) {
+//            for(int width=0; width<controller.WIDTH-1; width++) {
+//                gc.circle(new double[]{width*10, heigh*10, 2});
+//                if (controller.rightline[width][height])
+//                    gc.strokePolyline(new double[]{10*width, 10*height, 10*width+10, 10*height});
+//                else
+//                    System.out.print(" ");
 //            }
-    }
-
-    public void showPlayedCount(Game game) {
-        if(game.getGameName().equals("Dots And Boxes"))
-            System.out.println(DotsAndBoxesController.numberofplayedgame);
-        if (game.getGameName().equals("Battle Sea"))
-            System.out.println(BattleSeaController.numberofplayedgame);
-
-    }
-
-    public void showPoints(Game game) {
-
-    }
-}
+//            gc.circle(new double[]{width*10, heigh*10, 2});
+//            if(height!=controller.HEIGHT-1) {
+//                for(int width=0; width<controller.WIDTH; width++) {
+//                    if (controller.bottomline[width][height])
+//                        gc.strokePolyline(new double[]{10*width, 10*height, 10*width, 10*height+10});
+//                    else
+//                        System.out.print("  ");
+//                }
+//                System.out.println();
+//            }
+//        }
+//
+//    }
+//}
